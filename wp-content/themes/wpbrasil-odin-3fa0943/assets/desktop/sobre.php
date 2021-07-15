@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/reset.css">    
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="sobre-desk.css">
+    <link rel="stylesheet" href="../assets/reset.css">    
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sobre-desk.css">
 
     
 
@@ -263,7 +263,7 @@
             </div>
             <div class="linhado-tempo">
                 <div class="borda-linha"></div>
-                <img src="assets/imagens/ltn.png">
+                <img src="../assets/imagens/ltn.png">
             </div>
         </section>
 
