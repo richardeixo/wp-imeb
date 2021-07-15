@@ -8,7 +8,9 @@
  * @since 2.2.0
  */
 
-get_header($device); ?>
+get_header($device); 
+
+include('assets/desktop/sobre.html');?>
 
 
 <h1>Este e o modelo do sobre</h1>
