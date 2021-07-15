@@ -11,11 +11,11 @@
 get_header($device); 
 
 if ($device == "desktop") {
-	include('assets/desktop/sobre.html');
+	include('assets/desktop/sobre.php');
 }else{
-	include('assets/mobile/sobre.html');
+	include('assets/mobile/sobre.php');
 }
 ?>
 
 
-<h1>Este e o modelo do sobre</h1>
+
