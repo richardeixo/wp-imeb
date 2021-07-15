@@ -23,6 +23,3 @@
 <body <?php body_class(); ?>>
 	
 
-	<div id="wrapper" class="container">
-		<div class="row">
-		<h1>desktop hein lkkkk</h1>
