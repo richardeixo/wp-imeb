@@ -10,7 +10,12 @@
 
 get_header($device); 
 
-include('assets/desktop/sobre.html');?>
+if ($device == "desktop") {
+	include('assets/desktop/sobre.html');
+}else{
+	include('assets/mobile/sobre.html');
+}
+?>
 
 
 <h1>Este e o modelo do sobre</h1>
