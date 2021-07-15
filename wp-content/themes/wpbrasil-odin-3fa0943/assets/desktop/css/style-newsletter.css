@@ -1,0 +1,31 @@
+.newsletter{
+	background-color: #0076BF;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    margin: 0;
+}
+.coluna-txt, .coluna-img{
+	width: 25%;
+}
+.coluna-txt{
+	color: #fff;
+}
+.campo-txt input{
+	width: 188px;
+    padding: 5px 20px;
+    border: none;
+    color: gray;
+    border-radius: 5px;
+}
+.campo-txt button{
+	color: #0e7ac0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+.campo-txt input::placeholder{
+	color: #2525;
+}

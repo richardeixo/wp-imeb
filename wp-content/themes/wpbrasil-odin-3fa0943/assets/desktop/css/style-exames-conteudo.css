@@ -1,0 +1,76 @@
+.box-conteudo{
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-top: 60px;
+}
+.box-conteudo h1{
+	color: #8C8F91;
+	font-weight: 600;
+	font-size: 35px;
+}
+.box-conteudo p{
+	font-weight: 100;
+	color: #8C8F91;
+	font-size: 20px;
+}
+.card-exame-unidade{
+	width: 30%;
+    display: inline-flex;
+    margin: 25px 25px 0px 0px;
+}
+.card-exame-unidade img{
+	width: 30px;
+    height: 30px;
+    margin-top: 6px;
+}
+.unidade-conteudo{
+	margin-left: 10px;
+}
+.unidade-conteudo h4{
+	margin: 0;
+    color: #8C8F91;
+}
+.unidade-conteudo h3{
+	margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+.map-detalhe{
+	display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.map-detalhe a{
+	width: 50%;
+}
+.cobertura{
+	margin-top: 60px;
+}
+.cobertura p{
+	font-weight: 500;
+}
+.exames-title{
+	font-weight: 700 !important;
+}
+.espaco{
+	height: 50px;
+}
+.card-exame-video{
+	display: inline-flex;
+    width: 100%;
+    column-gap: 40px;
+    flex-direction: row;
+}
+.tipo-eco{
+	display: flex;
+	flex-wrap: wrap;
+}
+.tipo-separador{
+	line-height: 1px;
+	width: 50%;
+}
+.tipo-separador p{
+	font-size: 17px;
+}

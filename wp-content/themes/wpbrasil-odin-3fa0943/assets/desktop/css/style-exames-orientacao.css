@@ -1,0 +1,8 @@
+.periodo{
+	display: flex;
+    column-gap: 60px;
+}
+.periodo strong{
+	color: #000;
+	font-weight: 800;
+}

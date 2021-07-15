@@ -1,0 +1,159 @@
+
+
+
+#menuToggle span
+{
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: blue;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+
+.left-m{
+  height: 66px;
+  justify-content: center;
+}
+.mid-m{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-m{
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+/* novo css */
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menu-m{
+  display: inline-flex;
+  flex-direction: column;
+}
+.rsociais-m{
+  display: flex;
+  padding: 30px 0px;
+}
+.container-menu img{
+  padding: 0px 20px 35px 20px;
+}
+.tab-climed{
+  padding: 30px 0px;
+}
+.menu-medico-m{
+  display:none;
+}
+.menu-cliente-m{
+  display:block;
+}
+.ativa-m{
+  background: none;
+  border: none;
+  border-bottom: solid 2px #2A70B6;
+  color: #2A70B6;
+}
+.inativa-m{
+  background: none;
+  border: none;
+  border-bottom: solid 1px #77787B;
+  color: #77787B;
+}
+.tab-climed-m ul{
+  display: flex;
+}
+.tab-climed-m ul li{
+  display: inline-flex;
+}
+.ico-fb{
+  background: url(./assets/imagens/fb.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.ico-fb:hover{
+  background: url(./assets/imagens/fb2.png) no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.ico-ig{
+  background: url(./assets/imagens/ig.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.ico-ig:hover{
+  background: url(./assets/imagens/ig2.png) no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.ico-in{
+  background: url(./assets/imagens/in.png) no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.ico-in:hover{
+  background: url(./assets/imagens/in2.png) no-repeat;
+  width: 25px;
+  height: 25px;
+}

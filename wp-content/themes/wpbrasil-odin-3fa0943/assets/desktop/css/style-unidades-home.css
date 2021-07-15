@@ -1,0 +1,18 @@
+.btn-unidades{
+	background: #0e7ac0;
+    border: none;
+    width: 100%;
+    border-radius: 0px 20px 20px 0px;
+    padding: 5px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 7px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.col-unidades{
+	padding-left: 0;
+}
+.unidades h1{
+	color: #9C9C9C;
+}

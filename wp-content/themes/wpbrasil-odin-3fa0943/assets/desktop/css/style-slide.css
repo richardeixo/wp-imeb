@@ -1,0 +1,78 @@
+.container-eixo {
+    padding: 0px !important;
+}
+.img-eixo {
+    max-width: 100%;
+}
+.objeto-slider {
+    background: linear-gradient(0deg, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url("../imagens/home_slide_animal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 74vh;
+    display: flex;
+    align-items: flex-end;
+}
+.texto-slider {
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px 8px;
+    padding-bottom: 200px;
+}
+.texto-slider h1 {
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 35px;
+}
+.texto-slider p {
+    color: white;
+    font-size: 18px;
+}
+.slider{
+    margin-top: 0px !important;
+}
+.control-slider{
+    display: flex;
+    transform: translate(0px, -170px);
+    padding: 0px 70px;
+}
+.control-left{
+    width: 33.33%;
+}
+.control-dots{
+    width: 33.33%;
+    display: inline-flex;
+    justify-content: center;
+}
+.control-right{
+    width: 33.33%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.control-dots .c-dots{
+    display: inline-flex;
+    margin: 0;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+.control-dots .c-dots li{
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgba(255,255,255,.5);
+}
+.control-dots .c-dots .active{
+    background-color: #fff;
+}

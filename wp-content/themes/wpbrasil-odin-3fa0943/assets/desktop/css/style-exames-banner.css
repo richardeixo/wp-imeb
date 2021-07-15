@@ -1,0 +1,20 @@
+.img-banner {
+    background: linear-gradient(0deg, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url("../imagens/home_slide_animal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+}
+.banner-eixo{
+	padding: 20px;
+}
+body{
+	background-color: #EAEFF3;
+}
+h1, h2, h3, h4, span, p, a {
+    font-family: 'Montserrat', sans-serif;
+}

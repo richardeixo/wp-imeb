@@ -1,0 +1,179 @@
+h1, h2, h3, h4, span, p, a {
+    font-family: 'Montserrat', sans-serif;
+}
+.top{
+	background: #fff;
+	width: 1170px;
+	margin: auto;
+}
+.branco{
+	background: #fff;
+}
+.top-bar{
+	padding: 20px 0px;
+}
+.top-left{
+	display: flex;
+	align-items: center;
+}
+.tab-climed ul{
+	display: flex;
+}
+.tab-climed ul li{
+	display: inline-flex;
+}
+.tab-climed ul li a{
+	color: black;
+}
+.tab-climed ul li a:hover{
+	text-decoration: none;
+}
+.top-right, .rsociais{
+	display: flex;
+	justify-content: flex-end;
+    align-items: center;
+    height: 66px;
+}
+.rsociais{
+	padding: 0px 20px;
+}
+.ico-fb{
+	background: url(../imagens/fb.png) no-repeat;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+.ico-fb:hover{
+	background: url(../imagens/fb2.png) no-repeat;
+	width: 25px;
+	height: 25px;
+}
+.ico-ig{
+	background: url(../imagens/ig.png) no-repeat;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+.ico-ig:hover{
+	background: url(../imagens/ig2.png) no-repeat;
+	width: 25px;
+	height: 25px;
+}
+.ico-in{
+	background: url(../imagens/in.png) no-repeat;
+	width: 25px;
+	height: 25px;
+}
+.ico-in:hover{
+	background: url(../imagens/in2.png) no-repeat;
+	width: 25px;
+	height: 25px;
+}
+.btn-agende{
+	padding: 5px 12px;
+	background: #0e7ac0;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat';
+    line-height: 1;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.btn-exames{
+	color: #fff;
+	display: inline-flex;
+	margin: 14px 0px;
+	border: none;
+    background: none;
+    align-items: center;
+}
+.btn-exames img{
+	margin-right: 5px;
+}
+
+.btn-exames:hover{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.nav-bar{
+	background: #0076BF;
+}
+.menu{
+	display: inline-flex;
+	float: right;
+}
+.menu ul li{
+	display: inline-flex;
+	position: relative;
+	float: left;
+}
+.menu ul li a{
+	color: #fff;
+	padding: 0px 22px;
+}
+.menu ul li a:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
+.drop-exames{
+	border-top: solid 1px #fff;
+	display: none;
+}
+.drop-exames .coluna{
+	float:left;
+	width: 25%;
+	margin-bottom: 40px;
+}
+.drop-exames .coluna a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+.drop-exames .coluna span{
+	font-weight: bold;
+	color: #fff;
+	line-height: 85px;
+}
+.menu-medico{
+	display:none;
+}
+.menu-cliente{
+	display:block;
+}
+.ativa{
+	background: none;
+	border: none;
+	border-bottom: solid 2px #2A70B6;
+	color: #2A70B6;
+}
+.inativa{
+	background: none;
+	border: none;
+	border-bottom: solid 1px #77787B;
+	color: #77787B;
+}
+body{
+	background-color: #EAEFF3;
+}
+section {
+	margin: 60px 0px;
+}
+.btn-drop{
+	background: #748ec3;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 3px 9px;
+}
+.nav-bar .down{
+	background: url(../imagens/down.svg);
+}
+.img-ativa{
+	transform: rotate(270deg);
+}
+.menu-fixo{
+	    position: sticky;
+    top: 0;
+    z-index: 99;
+}

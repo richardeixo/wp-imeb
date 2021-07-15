@@ -1,0 +1,15 @@
+.exames{
+	background-color: #EAEFF3;
+}
+.box-img-exames{
+	display: flex;
+    flex-wrap: wrap;
+}
+.img-exames{
+	width: 25%;
+	padding: 30px;
+}
+.titulo-exames{
+	padding: 0px 30px;
+	color: #9C9C9C;
+}

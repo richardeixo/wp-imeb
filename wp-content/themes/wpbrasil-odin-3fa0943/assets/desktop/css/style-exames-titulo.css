@@ -1,0 +1,26 @@
+.titulo-exame h1{
+	color: #2975B6;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 50px;
+}
+.titulo-exame .btn-agende{
+	color: #fff;
+	background: #2975B6;
+	display: block;
+	width: 80%;
+	padding: 5px;
+	border-radius: 10px;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+}
+.box-titulo{
+	margin-top: -70px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
