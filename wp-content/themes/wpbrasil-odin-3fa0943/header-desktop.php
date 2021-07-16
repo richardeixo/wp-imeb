@@ -91,7 +91,7 @@ function closeNav() {
 	<div class="container top">
 		<div class="row top-bar">
 			<div class="col-md-6 top-left">
-				<img src="imagens/logo.png" />
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/logo.png" />
 				<div class="tab-climed">
 					<ul>
 						<li><button id="btn-cliente" class="ativa" onclick="cliente()">Cliente</button></li>
@@ -112,7 +112,7 @@ function closeNav() {
 	</div>
 	<div class="container-fluid nav-bar">
 		<div class="container">
-			<button class="btn-exames" onclick="ocultarExibir()"> <img width="10px" id="img-exam" class="img-ativa" src="imagens/down.svg">Exames</button>
+			<button class="btn-exames" onclick="ocultarExibir()"> <img width="10px" id="img-exam" class="img-ativa" src="<?php bloginfo('template_directory') ?>/assets/images/down.svg">Exames</button>
 
 			<nav class="menu menu-cliente" id="menu-cliente">
 				<ul>
