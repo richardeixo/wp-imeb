@@ -8,6 +8,10 @@
  * @since 2.2.0
  */
 
-
+get_header($device); 
+if ($device == "desktop") {
+	include('assets/desktop/home-m.php');
+}else{
+	include('assets/mobile/home-m.php');
+}
 ?>
-<h1>oi</h1>

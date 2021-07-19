@@ -1,0 +1,18 @@
+.container-eixo {
+    padding: 0px !important;
+}
+.img-eixo-exames {
+    max-width: 45%;
+    margin: 2px;
+}
+.icones-exames {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.exames h2 {
+    color: #929595;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 5%;
+}
