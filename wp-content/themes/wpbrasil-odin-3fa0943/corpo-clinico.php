@@ -10,9 +10,9 @@
 
 get_header($device); 
 if ($device == "desktop") {
-	include('assets/desktop/home.php');
+	include('assets/desktop/corpo-clinico.php');
 }else{
-	include('assets/mobile/home-m.php');
+	include('assets/mobile/corpo-clinico-m.php');
 }
 get_footer($device); 
 ?>

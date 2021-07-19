@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Mobile Home
+ * Template Name: Convenios
  *
  * The template for displaying pages with sidebar.
  *
@@ -9,10 +9,15 @@
  */
 
 get_header($device); 
+
 if ($device == "desktop") {
-	include('assets/desktop/home.php');
+	include('assets/desktop/convenios.php');
 }else{
-	include('assets/mobile/home-m.php');
+	include('assets/mobile/convenios-m.php');
 }
-get_footer($device); 
+
+get_footer($device);
 ?>
+
+
+

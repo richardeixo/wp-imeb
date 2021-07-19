@@ -13,7 +13,7 @@ get_header($device);
 if ($device == "desktop") {
 	include('assets/desktop/materiais-gratuitos.php');
 }else{
-	include('assets/mobile/sobre.php');
+	include('assets/desktop/materiais-m.php');
 }
 
 get_footer($device);

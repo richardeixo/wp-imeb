@@ -1,0 +1,10 @@
+.titulo-materiais {
+    background: #107abe;
+    color: white;
+    height: 25vh;
+    text-align: center;
+    font-size: 20px;
+}
+.titulo-materiais h1 {
+    padding-top: 40px;
+}

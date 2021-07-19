@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Mobile Home
+ * Template Name: Unidades lista
  *
  * The template for displaying pages with sidebar.
  *
@@ -9,10 +9,15 @@
  */
 
 get_header($device); 
+
 if ($device == "desktop") {
-	include('assets/desktop/home.php');
+	include('assets/desktop/unidades-lista.php');
 }else{
-	include('assets/mobile/home-m.php');
+	include('assets/mobile/unidades-lista-m.php');
 }
-get_footer($device); 
+
+get_footer($device);
 ?>
+
+
+

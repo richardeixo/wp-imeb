@@ -1,0 +1,43 @@
+.conteudo {
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 25px;
+}
+.primeira-camada img {
+    max-width: 100%;
+}
+
+.primeira-camada img {
+    margin-bottom: 20px;
+}
+span {
+    font-weight: bold;
+    font-size: 17px;
+}
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.primeira-camada button {
+    border: none;
+    background: #0e7ac0;
+    color: white;
+    font-weight: bold;
+    padding: 13px 75px;
+    border-radius: 77px;
+    margin: auto;
+    text-align: center;
+}
+ul {
+    margin-top: 15px;
+    font-size: 16px;
+}
+.map {
+    margin-top: 15px;
+}
+.primeira-camada img {
+    border-radius: 20px;
+}

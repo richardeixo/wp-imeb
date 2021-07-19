@@ -1,0 +1,21 @@
+.container-eixo {
+    padding: 0px !important;
+}
+.lower-img-eixo {
+    max-width: 80%;
+}
+.lower-bar {
+    background: #ecf1f3;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.quadrante {
+    text-align: center;
+}
+.alogoazul{
+    transform: translate(0%,-20%);
+}
