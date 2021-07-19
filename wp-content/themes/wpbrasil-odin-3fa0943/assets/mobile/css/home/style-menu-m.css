@@ -1,0 +1,62 @@
+.navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.navbar-brand {
+  padding: 0px 10px;
+}
+.navbar-brand img {
+  max-width: 150px;
+}
+.btn-menu-agendar{
+  max-width: 125px;
+  border: none;
+  background: #2575bb;
+  border-radius: 80px;
+  padding: 7px 1px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+#bs-example-navbar-collapse-1 {
+  height: 100vh;
+  background-color: #2575bb;
+}
+#tab1default > ul > li > a {
+  color: white;
+  font-size: 16px;
+}
+#tab2default > ul > li > a {
+  color: white;
+  font-size: 16px;
+}
+#bs-example-navbar-collapse-1 > div > div > div.panel-heading > ul {
+  border: none;
+}
+#tab1default{
+  padding-left: 15px;
+}
+#tab2default{
+  padding-left: 15px;
+}
+#bs-example-navbar-collapse-1 {
+  padding-top: 10px;
+}
+#bs-example-navbar-collapse-1 > div > div > div.panel-heading > ul > li > a {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+#bs-example-navbar-collapse-1 > div > div > div.panel-heading > ul > li.active > a {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #214a87;
+  color: #214a87;
+}
