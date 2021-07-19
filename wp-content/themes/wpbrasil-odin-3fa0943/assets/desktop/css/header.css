@@ -38,34 +38,34 @@ h1, h2, h3, h4, span, p, a {
 	padding: 0px 20px;
 }
 .ico-fb{
-	background: url(../imagens/fb.png) no-repeat;
+	background: url(../../images/fb.png) no-repeat;
 	width: 25px;
 	height: 25px;
 	margin-right: 10px;
 }
 .ico-fb:hover{
-	background: url(../imagens/fb2.png) no-repeat;
+	background: url(../../images/fb2.png) no-repeat;
 	width: 25px;
 	height: 25px;
 }
 .ico-ig{
-	background: url(../imagens/ig.png) no-repeat;
+	background: url(../../images/ig.png) no-repeat;
 	width: 25px;
 	height: 25px;
 	margin-right: 10px;
 }
 .ico-ig:hover{
-	background: url(../imagens/ig2.png) no-repeat;
+	background: url(../../images/ig2.png) no-repeat;
 	width: 25px;
 	height: 25px;
 }
 .ico-in{
-	background: url(../imagens/in.png) no-repeat;
+	background: url(../../images/in.png) no-repeat;
 	width: 25px;
 	height: 25px;
 }
 .ico-in:hover{
-	background: url(../imagens/in2.png) no-repeat;
+	background: url(../../images/in2.png) no-repeat;
 	width: 25px;
 	height: 25px;
 }
@@ -176,4 +176,25 @@ section {
 	    position: sticky;
     top: 0;
     z-index: 99;
+}
+.banner-eixo{
+	padding: 20px;
+}
+.blue-banner {
+    background: #0e7ac0;
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+}
+.titulo h1{
+	font-size: 57px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "montserrat";
+}
+.titulo-blog{
+	margin-top: -320px;
+    padding-bottom: 80px;
 }

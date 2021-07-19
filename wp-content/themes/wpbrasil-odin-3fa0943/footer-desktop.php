@@ -1,6 +1,18 @@
+<section class="newsletter">
+		<div class="coluna-txt">
+			<h1>DICAS DE SAÚDE</h1>
+			<span>Receba Dicas de Saúde Atualizadas</span>
+ 			<div class="campo-txt">
+				<input type="text" name="" placeholder="Digite seu email"><button style="margin-left: 2px;" type="button">Enviar</button>
+			</div>
+ 		</div>
+   		<div class="coluna-img">
+   			<img src="<?php bloginfo('template_directory') ?>/assets/images/img-news.png">
+   		</div>
+</section>
 <footer>
     	<div class="container-fluid branco">
-    	<div class="container espaco">
+    	<div class="container espaco-f">
     		<div class="footer-info">  		
     			<img src="<?php bloginfo('template_directory') ?>/assets/images/logo.png">
     			<nav class="f-menu">
@@ -24,8 +36,8 @@
 						<a href="#"><div class="f-ico-in"></div></a>
 					</div>
 					<h1>CENTRAL DE ATENDIMENTO</h1>
-					<p><img style="margin-right: 10px; width: 19px;" src="imagens/icon-fone.png">(61) 3326 0033 | 3771 3800</p>
-					<p><img style="margin-right: 10px; width: 19px;" src="imagens/icon-wpp.png">(61) 9976-4074</p>
+					<p><img style="margin-right: 10px; width: 19px;" src="<?php bloginfo('template_directory') ?>/assets/images/icon-fone.png">(61) 3326 0033 | 3771 3800</p>
+					<p><img style="margin-right: 10px; width: 19px;" src="<?php bloginfo('template_directory') ?>/assets/images/icon-wpp.png">(61) 9976-4074</p>
 					<button type="button" class="btn btn-primary btn-agende">AGENDE <br/>SEU EXAME</button>
 				</div>
 				<div class="widgets">
@@ -57,7 +69,7 @@
 			</div>
     	</div>
     	</div>
-    	<div class="container espaco">
+    	<div class="container espaco-f">
     		<h1>ENDEREÇOS</h1>
     		<div class="enderecos">
     			<div class="col-md-3">

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Mobile Sobre
+ * Template Name: Unidades Display 2
  *
  * The template for displaying pages with sidebar.
  *
@@ -11,13 +11,10 @@
 get_header($device); 
 
 if ($device == "desktop") {
-	include('assets/desktop/sobre.php');
+	include('assets/desktop/unidades-display2.php');
 }else{
 	include('assets/mobile/sobre.php');
 }
 
 get_footer($device);
 ?>
-
-
-

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Mobile Sobre
+ * Template Name: Materiais Gratuitos
  *
  * The template for displaying pages with sidebar.
  *
@@ -11,7 +11,7 @@
 get_header($device); 
 
 if ($device == "desktop") {
-	include('assets/desktop/sobre.php');
+	include('assets/desktop/materiais-gratuitos.php');
 }else{
 	include('assets/mobile/sobre.php');
 }

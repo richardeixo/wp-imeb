@@ -22,9 +22,31 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-slide.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-depoimentos.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-searchbar.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-materiais.css">
 <?php  if (is_page('Sobre')){ ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/sobre-desk.css">
 <?php }?>
+<?php if (is_page('Single Exame')) {?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-banner.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-titulo.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-conteudo.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-orientacao.css">
+<?php } ?>
+<?php if (is_page('Blog Exame')) {?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-blog-exame.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-banner.css">
+<?php } ?>
+<?php if (is_page('Materiais Gratuitos')) { ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-blog-exame.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-banner.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-materiais.css">
+<?php } ?>
+<?php if (is_page('Unidades Display')) { ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-unidades.css">
+<?php } ?>
+<?php if (is_page('Unidades Display2')) { ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-unidades-geral.css">
+<?php } ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -171,7 +171,7 @@
     		<div class="depoimento-full">
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="imagens/home_slide_animal.jpg">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
 	    			</div>
 	    			<div class="col-txt">
 	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
@@ -190,7 +190,7 @@
 
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="imagens/home_slide_animal.jpg">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
 	    			</div>
 	    			<div class="col-txt">
 	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
@@ -209,7 +209,7 @@
 
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="imagens/home_slide_animal.jpg">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
 	    			</div>
 	    			<div class="col-txt">
 	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
@@ -228,7 +228,7 @@
 
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="imagens/home_slide_animal.jpg">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
 	    			</div>
 	    			<div class="col-txt">
 	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
@@ -247,7 +247,7 @@
 
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="imagens/home_slide_animal.jpg">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">>
 	    			</div>
 	    			<div class="col-txt">
 	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
@@ -266,7 +266,7 @@
 
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="imagens/home_slide_animal.jpg">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
 	    			</div>
 	    			<div class="col-txt">
 	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
@@ -308,15 +308,3 @@
     	</div>
     </section>
 
-    <section class="newsletter">
-    		<div class="coluna-txt">
-    			<h1>DICAS DE SAÚDE</h1>
-    			<span>Receba Dicas de Saúde Atualizadas</span>
-    			<div class="campo-txt">
-    				<input type="text" name="" placeholder="Digite seu email"><button style="margin-left: 2px;" type="button">Enviar</button>
-    			</div>
-    		</div>
-    		<div class="coluna-img">
-    			<img src="<?php bloginfo('template_directory') ?>/assets/images/img-news.png">
-    		</div>
-    </section>

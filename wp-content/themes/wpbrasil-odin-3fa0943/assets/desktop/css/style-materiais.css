@@ -20,12 +20,7 @@
 -o-animation: fadeIn 0.5s ease-in-out;
 animation: fadeIn 0.5s ease-in-out;
 }
-.blue-banner {
-    background: #0e7ac0;
-    height: 80vh;
-    display: flex;
-    align-items: flex-end;
-}
+
 .card-material{
 	border: 1px solid #2424;
     border-radius: 25px;
