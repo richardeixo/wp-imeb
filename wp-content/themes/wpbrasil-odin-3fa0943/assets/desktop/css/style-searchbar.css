@@ -1,6 +1,9 @@
 .searchbar{
     transform: translate(0%,-120%);
 }
+.searchbar-alt{
+    transform: translate(0%,-76%);
+}
 .container-search{
     padding: 0px 40px;
 }

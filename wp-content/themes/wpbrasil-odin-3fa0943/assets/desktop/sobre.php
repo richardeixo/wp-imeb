@@ -1,5 +1,38 @@
+<section style="margin:0;" class="banner">
+        <div class="container-fluid container-eixo banner-eixo">
+            <div class="blue-banner">                
+            </div>
+        </div>                  
+</section>
 
-
+<section class="titulo-blog">
+        <div class="container titulo">
+            <h1>Conheça as vantagens da cintilografia miocárdica!</h1>
+        </div>
+</section>
+<section class="searchbar-alt">
+        <div class="container container-search">
+            <div class="quadrante-searchbar">
+                <div class="conteudo-searchbar">
+                    <div class="rowb esearch">
+                        <div class="search">                            
+                            <input type="text" class="searchTerm" placeholder="O que você procura?">
+                            <button type="submit" class="searchButton">
+                                <img src="<?php bloginfo('template_directory') ?>/assets/images/lupa.png" width="25px" class="img-eixo">
+                            </button>
+                         </div>
+                    </div>
+                    <div class="rowb">
+                        <div class="botoes-baixos">
+                            <a href="#"><button class="botao-procura">Resultados</button></a>
+                            <a href="#"><button class="botao-procura">Convênios</button></a>
+                            <a href="#"><button class="botao-procura">Unidades</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
   
             
         <section class="main-content-sobre">
@@ -117,9 +150,9 @@
             </div>
 
             <div class="selos-sobre">
-                <img src="<?php site_url()?>/assets/imagens/selos/Grupo 166.png" alt="">
-                <img src="assets/imagens/selos/Grupo 162.png" alt="">
-                <img src="wp-content/themes/wpbrasil-odin-3fa0943/assets/desktop/assets/imagens/selos/Grupo 170.png" alt="">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/selos/Grupo 166.png" alt="">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/selos/Grupo 162.png" alt="">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/selos/Grupo 170.png" alt="">
             </div>
             <div class="terceiro-texto">
                 <div class="terceiro-um">

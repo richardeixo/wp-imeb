@@ -1,5 +1,16 @@
 .img-banner {
-    background: linear-gradient(0deg, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url("../imagens/home_slide_animal.jpg");
+    background: linear-gradient(0deg, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url("../../images/slide.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+}
+.img-banner-blog {
+    background: linear-gradient(0deg, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url("../../images/slide.png");
 
     background-size: cover;
     background-position: center;
