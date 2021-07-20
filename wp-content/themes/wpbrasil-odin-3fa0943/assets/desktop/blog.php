@@ -57,7 +57,6 @@
 
      <section class="conteudo-blog">
     <div class="container">
-        <h1>CONTEÚDOS DA SAÚDE</h1>
         <div class="row">
             <div class="cards-conteudo">
                 <div class="card-conteudo">
@@ -99,15 +98,40 @@
 
             
         </div>
-
-        <div class="row">
+                <div class="row">
             <div class="cards-conteudo">
-                <div class="card-conteudo-video">
-                    <iframe width="545" height="250" src="https://www.youtube.com/embed/P8A2iXI2JdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-conteudo">
+                    <div class="texto-conteudo">
+                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
+                        <a href="#"><button>Ver mais</button></a>
+                    </div>
                 </div>
 
-                <div class="card-conteudo-video">
-                    <iframe width="545" height="250" src="https://www.youtube.com/embed/P8A2iXI2JdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-conteudo">
+                    <div class="texto-conteudo">
+                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
+                        <a href="#"><button>Ver mais</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+                <div class="row">
+            <div class="cards-conteudo">
+                <div class="card-conteudo">
+                    <div class="texto-conteudo">
+                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
+                        <a href="#"><button>Ver mais</button></a>
+                    </div>
+                </div>
+
+                <div class="card-conteudo">
+                    <div class="texto-conteudo">
+                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
+                        <a href="#"><button>Ver mais</button></a>
+                    </div>
                 </div>
 
             </div>

@@ -1,0 +1,37 @@
+.lista-convenios{
+	height: 80px;
+}
+.todos-convenios{
+	background: #0e7ac0;
+    display: block;
+    border: none;
+    margin: auto;
+    padding: 6px 50px;
+    font-family: 'Montserrat';
+    color: #fff;
+    font-weight: 700;
+    border-radius: 25px;
+}
+.txt-msg{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.txt-msg p{
+	width: 500px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+.convenios-msg{
+	background: #fff;
+    display: block;
+    border: none;
+    margin: auto;
+    padding: 6px 70px;
+    font-family: 'Montserrat';
+    color: #0e7ac0;
+    font-weight: 700;
+    border-radius: 25px;
+    border: 1px solid #0e7ac0;
+}
