@@ -1,0 +1,14 @@
+.objeto-imgazul {
+    background: linear-gradient(0deg, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url("./assets/imagens/home_slide_animal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+}
+.container-eixo {
+    padding: 0px;
+}

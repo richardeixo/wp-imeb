@@ -1,0 +1,149 @@
+p {
+    font-size: 16px;
+}
+.tab-info-exames {
+    transform: translate(0%,-7%);
+    background: white;
+    border-radius: 20px 20px 0px 0px;
+}
+.conteudo-box-info {
+    border-radius: 20px 20px 0px 0px;
+    width: 100vw;
+    padding: 10px;
+    margin: auto;
+}
+.box-titulo-cta {
+    padding-bottom: 40px;
+}
+.conteudo-box-info h1 {
+    font-size: 30px;
+    color: #2975b6;
+    font-weight: bold;
+}
+.conteudo-box-info button {
+    border: none;
+    color: white;
+    background: #2975b6;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 12px;
+    width: 100%;
+}
+.conteudo-box-info a {
+        color: #8b8e90;
+        text-decoration: none;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+        color: #8b8e90;
+}
+.conteudo-tab-unica-exame-info {
+    padding-top: 14px;
+}
+.conteudo-tab-unica-exame-info h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #8b8e90;
+}
+.card-unidade-exame-lista {
+    display: flex;
+    align-items: center;
+}
+.text-unidade-exame h3 {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+.text-unidade-exame p {
+    color: #888b8d;
+    font-size: 16px;
+    font-weight: bold;
+}
+.pin-unidade-exame {
+    margin-right: 10px;
+}
+
+.link-tab-unidade-exames a{
+    color: #2975b6;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.listaunidades-tab-exames {
+    padding-top: 20px;
+}
+.card-unidade-exame-lista {
+    padding-bottom: 40px;
+}
+.outras-informacoes h2 {
+    text-transform: uppercase;
+}
+.cobertura-convenios span {
+    color: #5d6162;
+    font-weight: bold;
+}
+.cobertura-convenios a {
+    color: #2975b6;
+    font-weight: bold;
+}
+.preco-eco a {
+    color: #2975b6;
+    font-weight: bold;
+}
+.preco-eco {
+    padding-top: 40px;
+}
+
+.texto-orientacoes li {
+    color: #8b8e90;
+    font-weight: bold;
+    font-size: 16px;
+}
+.turno-orientacao {
+    font-size: 18px !important;
+    color: black !important;
+    font-weight: bold;
+}
+.texto-orientacoes ul {
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+.primeira-conheca ul {
+    margin-left: 10px;
+}
+.primeira-conheca li {
+    color: #8b8e90;
+    font-weight: bold;
+    font-size: 16px;
+}
+.primeira-conheca li a {
+    color: #2975b6;
+}
+.segunda-conheca {
+    padding-top: 20px;
+}
+.segunda-conheca li {
+    color: #8b8e90;
+    font-size: 16px;
+}
+.segunda-conheca ul {
+    margin-left: 10px;
+}
+.terceira-conheca {
+    padding-top: 20px;
+}
+.terceira-conheca p {
+    margin-left: 10px;
+    color: #8b8e90;
+    font-size: 16px;
+}
+.terceira-conheca a {
+    color: #2975b6;
+    font-weight: bold;
+}
+.quarta-conheca {
+    padding-top: 20px;
+}
+.quarta-conheca h2 {
+    padding-bottom: 20px;
+}

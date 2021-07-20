@@ -67,9 +67,8 @@
 <?php } ?>
 <?php if (is_page('Exame single')) {?>
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/unidades-m.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/exames/img-azul.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/exames/tab-info-exames.css">
 
 
 <?php } ?>
