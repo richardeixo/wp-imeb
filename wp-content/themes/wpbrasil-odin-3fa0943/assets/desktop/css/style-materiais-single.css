@@ -1,0 +1,29 @@
+.card-material-single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    max-width: 840px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.imgtxt {
+    display: flex;
+    align-items: center;
+}
+.btn-matsing {
+    background: #107abe;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 300px;
+    border-radius: 20px;
+}
+.txts h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
