@@ -3,27 +3,27 @@
                <div class="lower-bar">
                    <div class="quadrante">
                        <a href="#"></a>
-                       <img src="./assets/imagens/barra-fixa-mobile/resultado.png" class="img-fluid lower-img-eixo">
+                       <img src="<?php bloginfo('template_directory') ?>/assets/images/barra-fixa-mobile/resultado.png" class="img-fluid lower-img-eixo">
                        </a>
                    </div>
                    <div class="quadrante">
                        <a href="#"></a>
-                       <img src="./assets/imagens/barra-fixa-mobile/agenda.png" class="img-fluid lower-img-eixo">
+                       <img src="<?php bloginfo('template_directory') ?>/assets/images/barra-fixa-mobile/agenda.png" class="img-fluid lower-img-eixo">
                        </a>
                    </div>
                    <div class="quadrante">
                        <a href="#"></a>
-                       <img src="./assets/imagens/barra-fixa-mobile/azulogo.png" class="img-fluid lower-img-eixo alogoazul">
+                       <img src="<?php bloginfo('template_directory') ?>/assets/images/barra-fixa-mobile/azulogo.png" class="img-fluid lower-img-eixo alogoazul">
                        </a>
                    </div>
                    <div class="quadrante">
                        <a href="#"></a>
-                       <img src="./assets/imagens/barra-fixa-mobile/whatsapp.png" class="img-fluid lower-img-eixo">
+                       <img src="<?php bloginfo('template_directory') ?>/assets/images/barra-fixa-mobile/whatsapp.png" class="img-fluid lower-img-eixo">
                        </a>
                    </div>
                    <div class="quadrante">
                        <a href="#"></a>
-                       <img src="./assets/imagens/barra-fixa-mobile/fone.png" class="img-fluid lower-img-eixo">
+                       <img src="<?php bloginfo('template_directory') ?>/assets/images/barra-fixa-mobile/fone.png" class="img-fluid lower-img-eixo">
                        </a>
                    </div>
                </div>            
