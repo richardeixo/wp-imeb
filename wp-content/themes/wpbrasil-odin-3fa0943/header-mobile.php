@@ -94,7 +94,7 @@
                  <span class="icon-bar"></span>
                </button>
                <a class="navbar-brand" href="#">
-                   <img alt="Brand" src="./assets/imagens/logo.png" class="img-ico-menu-m">
+                   <img alt="Brand" src="<?php bloginfo('template_directory') ?>/assets/images/logo.png" class="img-ico-menu-m">
                  </a>
                <a href="#"><button class="btn-menu-agendar">AGENDE SEU <br>EXAME</button></a>
              </div>
