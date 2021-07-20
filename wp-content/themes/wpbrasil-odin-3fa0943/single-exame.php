@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Single Exame
+ * Template Name: Single Exameaaaa
  *
  * The template for displaying pages with sidebar.
  *
