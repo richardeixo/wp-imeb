@@ -1,0 +1,56 @@
+.conteudo {
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+    max-width: 1150px;
+    padding: 15px;
+        margin: auto;
+    background: #fff;
+    border-radius: 25px;
+}
+.content-form h2 {
+    color: #a7aaab;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content-interno {
+    display: flex;
+}
+.content-form {
+    padding-left: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    border-radius: 20px;
+    border: 1px solid #d7d9d9;
+
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.content-form {
+    width: 40%;
+}
+.enviar {
+    background: #0e7ac0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 80px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.enviar-arquivo {
+    background: #a6a9aa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 80px;
+    margin-bottom: 20px;
+}
+.imagem-form img {
+    border-radius: 20px;
+}
