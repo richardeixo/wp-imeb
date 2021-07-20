@@ -33,7 +33,7 @@
             </div>
         </div>
     </section>
-    <section class="conteudo">
+    <section style="margin-top:-80px; margin-bottom: 60px;" class="conteudo">
        <div class="content-interno">
            <div class="imagem-form">
                 <img src="<?php bloginfo('template_directory') ?>/assets/images/Screenshot_232.png">

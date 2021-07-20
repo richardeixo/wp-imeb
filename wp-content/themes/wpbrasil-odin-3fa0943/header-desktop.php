@@ -41,6 +41,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-banner.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-materiais.css">
 <?php } ?>
+<?php if (is_page('Materiais Single')) { ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-materiais-single.css">
+<?php } ?>
 <?php if (is_page('Unidades Display')) { ?>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-unidades.css">
 <?php } ?>

@@ -62,7 +62,7 @@
 			<h1>Onde Fazer</h1>
 			<strong><p class="exames-title">UNIDADES</p></strong>
 			<div class="card-exame-unidade">
-				<img src="imagens/pin.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/pin.png">
 				<div class="unidade-conteudo">
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
@@ -74,7 +74,7 @@
 			</div>
 
 			<div class="card-exame-unidade">
-				<img src="imagens/pin.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/pin.png">
 				<div class="unidade-conteudo">
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
@@ -86,7 +86,7 @@
 			</div>
 
 			<div class="card-exame-unidade">
-				<img src="imagens/pin.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/pin.png">
 				<div class="unidade-conteudo">
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
@@ -98,7 +98,7 @@
 			</div>
 
 			<div class="card-exame-unidade">
-				<img src="imagens/pin.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/pin.png">
 				<div class="unidade-conteudo">
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
@@ -110,7 +110,7 @@
 			</div>
 
 			<div class="card-exame-unidade">
-				<img src="imagens/pin.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/pin.png">
 				<div class="unidade-conteudo">
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
