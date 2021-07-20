@@ -65,7 +65,14 @@
 
 
 <?php } ?>
+<?php if (is_page('Exame single')) {?>
 
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/unidades-m.css">
+
+
+<?php } ?>
 
 
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-lowerbar-m.css">
