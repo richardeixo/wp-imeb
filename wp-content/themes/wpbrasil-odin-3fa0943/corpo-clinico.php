@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Corpo Clinicoaa
+ * Template Name: Corpo Clinico
  *
  * The template for displaying pages with sidebar.
  *
