@@ -13,7 +13,7 @@ get_header($device);
 if ($device == "desktop") {
 	include('assets/desktop/exame-especifico.php');
 }else{
-	include('assets/mobile/sobre.php');
+	include('assets/mobile/single-exame-m.php');
 }
 
 get_footer($device);
