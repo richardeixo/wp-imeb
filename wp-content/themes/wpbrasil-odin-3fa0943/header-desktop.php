@@ -59,6 +59,9 @@
 <?php if (is_page('Trabalhe Conosco')) { ?>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/formd-d.css">
 <?php } ?>
+<?php if (is_page('Blog')) { ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/blog-grid-azul.css">
+<?php } ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
