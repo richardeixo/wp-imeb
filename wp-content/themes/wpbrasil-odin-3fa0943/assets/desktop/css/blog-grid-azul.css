@@ -1,0 +1,41 @@
+img {
+    max-width: 100%;
+}
+.boxes {
+    max-width: 970px;
+    margin: auto;
+}
+.primeira-linha {
+    display: flex;
+    justify-content: center;
+}
+.segunda-linha {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.imgss-um {
+    display: flex;
+    padding-bottom: 5px;
+}
+.imgss-dois {
+display: flex;
+}
+.imgss img {
+    max-width: 197px;
+}
+.imgg img {
+    max-width: 400px;
+}
+.segunda-linha img {
+    max-width: 400px;
+}
+.imgg {
+    padding-right: 5px;
+}
+body > div > div.segunda-linha > a:nth-child(1) > img {
+    padding-right: 5px;
+}
+body > div > div.segunda-linha > a:nth-child(2) > img {
+    max-height: 250px;
+}
