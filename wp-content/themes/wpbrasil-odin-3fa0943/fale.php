@@ -13,7 +13,7 @@ get_header($device);
 if ($device == "desktop") {
 	include('assets/desktop/trabalhec.php');
 }else{
-	include('assets/mobile/home.php');
+	include('assets/mobile/fale-conosco.php');
 }
 
 get_footer($device);

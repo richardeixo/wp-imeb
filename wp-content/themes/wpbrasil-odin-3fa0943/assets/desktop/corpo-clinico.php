@@ -1,4 +1,11 @@
- <section style="margin:0;" class="banner">
+<?php
+$args = array(
+    'post_type'=> 'corpo-clinico',
+    'order'    => 'ASC'
+    );    
+$the_query = new WP_Query( $args );
+?>
+<section style="margin:0;" class="banner">
         <div class="container-fluid container-eixo banner-eixo">
             <div class="blue-banner">                
             </div>
@@ -35,103 +42,22 @@
     </section>
     <div style="margin-top: -80px; margin-bottom: 60px;" class="conteudo">
         <h2 class="titulo-corpo">NOSSO CORPO CLÍNICO</h2>
-        <div class="card-doutores">
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-            <div class="card-dr">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-                <div class="texto-dr">
-                    <h2>Dr de exemplo com nome e sobrenome da silva</h2>
-                    <p>Médico Nuclear</p>
-                    <span>CRM 3029</span>
-                </div>
-            </div>
-        </div>
+		<div class="card-doutores">
+		<?php
+
+            foreach ($the_query->posts as $key => $post) { ?>
         
+            <div class="card-dr">
+                <img src="<?=get_the_post_thumbnail_url($post->ID) ?>">
+                <div class="texto-dr">
+                    <h2><?= $post->post_title;?></h2>
+                    <?=  $post->post_content ?>
+                </div>
+            </div>
+            
+        
+        <?php
+            }
+          	?>
+			</div>
     </div>

@@ -12,17 +12,17 @@
                        </a>
                    </div>
                    <div class="quadrante">
-                       <a href="#"></a>
+                       <a href="<?php home_url() ?>/Imeb/"></a>
                        <img src="<?php bloginfo('template_directory') ?>/assets/images/barra-fixa-mobile/azulogo.png" class="img-fluid lower-img-eixo alogoazul">
                        </a>
                    </div>
                    <div class="quadrante">
-                       <a href="#"></a>
+                       <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5561999764074"></a>
                        <img src="<?php bloginfo('template_directory') ?>/assets/images/barra-fixa-mobile/whatsapp.png" class="img-fluid lower-img-eixo">
                        </a>
                    </div>
                    <div class="quadrante">
-                       <a href="#"></a>
+                       <a href="tel:6133260033"></a>
                        <img src="<?php bloginfo('template_directory') ?>/assets/images/barra-fixa-mobile/fone.png" class="img-fluid lower-img-eixo">
                        </a>
                    </div>

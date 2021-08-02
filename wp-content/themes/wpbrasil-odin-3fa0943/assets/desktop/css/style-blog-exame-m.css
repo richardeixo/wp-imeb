@@ -1,0 +1,101 @@
+.img-banner {
+    background: linear-gradient(0deg, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url("../imagens/home_slide_animal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+}
+.titulo{
+	width: 70%;
+}
+.titulo h1{
+	font-size: 57px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "montserrat";
+}
+.titulo-blog{
+	margin-top: -420px;
+    padding-bottom: 80px;
+}
+.box-conteudo-blog{
+	margin-top: -70px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.box-conteudo-blog img{
+	width: 45%;
+    height: 40%;
+    border-radius: 31px;
+    margin-right: 30px;
+    float: left;
+}
+.conteudo-blog{
+	font-family: 'montserrat';
+}
+.conteudo-blog h1{
+	color: #9C9C9C;
+    line-height: 45px;
+    font-size: 33px;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    font-weight: 900;
+    margin: 0;
+}
+.conteudo-blog p{
+	font-size: 20px;
+}
+.conteudo-blog a{
+	color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.conteudo-blog h3{
+	font-size: 27px;
+}
+.conteudo-blog .saibamais{
+	font-size: 17px;
+}
+.conteudo-blog .lista p{
+	margin: 0;
+}
+.conteudo-blog button{
+	background: #0E7AC0;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.box-conteudo{
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-top: 60px;4
+}
+.img-relacionados{
+	display: inline-flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.img-relacionados figure img{
+	width: 100%;
+	border-radius: 25px;
+}
+.c-relacionados strong{
+	font-size: 20px;
+    font-family: 'Montserrat';
+}
+.img-relacionados figcaption{
+	font-family: 'Montserrat';
+	font-weight: 600;
+}

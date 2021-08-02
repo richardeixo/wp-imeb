@@ -1,3 +1,11 @@
+<?php
+$args = array(
+    'post_type'=> 'slider',
+    'order'    => 'ASC'
+    );    
+$the_query = new WP_Query( $args );
+$count = $the_query->found_posts;
+?>
 <section class="slider">
         <div class="container-fluid container-eixo slider-eixo">  
 
@@ -5,36 +13,41 @@
       
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-    
+    <?php
+			$c_slide = 0;
+            foreach ($the_query->posts as $key => $post) { 
+					if($c_slide == 0){?>
                     <div class="item active">
                         <div class="objeto-slider">
                             <div class="texto-slider">
                                 <h1>
-                                    Resultados Online
+                                    <?= $post->post_title;?>
                                 </h1>
                                 <p>
-                                    Agora você pode consultar os seus
-                                    resultados dos seus exames
-                                    em qualquer lugar
+                                    <?=  $post->post_content ?>
                                 </p>
                             </div>
                         </div>
                     </div>
-            
-                    <div class="item">
+            <?php
+            }else{?>
+					<div class="item">
                         <div class="objeto-slider">
                             <div class="texto-slider">
                                 <h1>
-                                    Resultados Online
+                                    <?= $post->post_title;?>
                                 </h1>
                                 <p>
-                                    Agora você pode consultar os seus
-                                    resultados dos seus exames
-                                    em qualquer lugar
+                                    <?=  $post->post_content ?>
                                 </p>
                             </div>
                         </div>
-                    </div>   
+                    </div>	
+			<?php		}
+				$c_slide++;
+			}
+          	?>
+                  
     
                 </div>
                 <div class="container control-slider">
@@ -46,8 +59,12 @@
 
 				  	<div class="control-dots ">
 				  		<ol class="c-dots carousel-indicators">
-				  			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				  			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<?php $i = 0;
+							while ($i < $count) {
+								echo '<li data-target="#carousel-example-generic" data-slide-to=" ',$i,' "></li>';
+								$i++;
+							}
+							?>
 				  		</ol>
 				  	</div>
 
@@ -90,14 +107,14 @@
 	<div class="container">
 		<h1 class="titulo-exames">EXAMES</h1>
 		<div class="box-img-exames">
-			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/ecografia.png" class="img-exames" />
-			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/densitometria.png"  class="img-exames"/>
-			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/pet.png"  class="img-exames"/>
-			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/cintilografia.png"  class="img-exames"/>
-			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/mamografia.png"  class="img-exames"/>
-			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/res-magnetica.png"  class="img-exames"/>
-			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/mamografia.png"  class="img-exames"/>
-			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/res-magnetica.png"  class="img-exames"/>
+			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/ecografia1.png" class="img-exames" />
+			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/cintilografia1.png"  class="img-exames"/>
+			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/densitometria1.png"  class="img-exames"/>
+			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/mamografia1.png"  class="img-exames"/>
+			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/pet1.png"  class="img-exames"/>
+			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/ressonancia1.png"  class="img-exames"/>
+			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/tomografia.png"  class="img-exames"/>
+			<img src="<?php bloginfo('template_directory') ?>/assets/images/exames/suite.png"  class="img-exames"/>
 		</div>
 		<br/>
 	</div>
@@ -108,17 +125,17 @@
         <h1>CONTEÚDOS DA SAÚDE</h1>
         <div class="row">
             <div class="cards-conteudo">
-                <div class="card-conteudo">
+                <div class="card-conteudo conteudo-img">
                     <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
+                        <h3>Como é feito um diagnóstico de câncer? É possível dar falso positivo?</h3>
+                        <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
                     </div>
                 </div>
 
-                <div class="card-conteudo">
+                <div class="card-conteudo conteudo-img2">
                     <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
+                        <h3>Como escolher um oncologista?</h3>
+                        <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
                     </div>
                 </div>
 
@@ -129,17 +146,17 @@
 
         <div class="row">
             <div class="cards-conteudo">
-                <div class="card-conteudo">
+                <div class="card-conteudo conteudo-img3">
                     <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
+                        <h3>Como é feito o exame de PET/CT?</h3>
+                        <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
                     </div>
                 </div>
 
-                <div class="card-conteudo">
+                <div class="card-conteudo conteudo-img4">
                     <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
+                        <h3>O que detecta o exame de PET-CT?</h3>
+                        <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
                     </div>
                 </div>
 
@@ -155,7 +172,7 @@
                 </div>
 
                 <div class="card-conteudo-video">
-                    <iframe width="545" height="250" src="https://www.youtube.com/embed/P8A2iXI2JdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="545" height="250" src="https://www.youtube.com/embed/kgHeTzudDnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
             </div>
@@ -171,7 +188,7 @@
     		<div class="depoimento-full">
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m1.jpg">
 	    			</div>
 	    			<div class="col-txt">
 	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
@@ -190,13 +207,28 @@
 
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m2.jpg">
 	    			</div>
 	    			<div class="col-txt">
-	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
-	foi bem rápido, todos os atendentes e técnicos foram muito
-	simpáticos. Recomendo."</p>
-	    			<strong>Aline Almeida</strong>
+	    			<p class="texto">“Há tempos conheço o IMEB, desde o começo me apaixonei e hoje mora no meu coração. A Higiene é nota 10, médicos atenciosos e inteligentes, recepção acolhedora, nos orienta nos exames. Tenho muita confiança. Parabéns para a Kelly, funcionária que nos acolhe e acalma na hora da injeção. Bravo para todas as unidades do IMEB."</p>
+	    			<strong>Sonia Teixeira Mendes de Souza</strong>
+	    			<div class="rating-stars">
+	    			<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					</div>
+					</div>
+	    		</div>
+
+	    		<div class="card-depoimento">
+	    			<div class="col-img">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m3.jpg">
+	    			</div>
+	    			<div class="col-txt">
+	    			<p class="texto">“Minha irmã, Vanessa Angélica, foi tratada com muito carinho e, estando insegura em relação ao exame, foi tranquilizada. Tudo correu bem. Obrigado!.”</p>
+	    			<strong>Isis G. Coelho Chaves</strong>
 	    			<div class="rating-stars">
 	    			<span class="fa fa-star checked"></span>
 					<span class="fa fa-star checked"></span>
@@ -212,10 +244,8 @@
 	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
 	    			</div>
 	    			<div class="col-txt">
-	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
-	foi bem rápido, todos os atendentes e técnicos foram muito
-	simpáticos. Recomendo."</p>
-	    			<strong>Aline Almeida</strong>
+	    			<p class="texto">“Elogio ao Dr. Leonardo Prado, quanto ao profissionalismo e humildade na revisão dos resultados. Parabéns!”</p>
+	    			<strong>Marcos Antônio P. Moraes</strong>
 	    			<div class="rating-stars">
 	    			<span class="fa fa-star checked"></span>
 					<span class="fa fa-star checked"></span>
@@ -228,13 +258,11 @@
 
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m4.jpg">>
 	    			</div>
 	    			<div class="col-txt">
-	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
-	foi bem rápido, todos os atendentes e técnicos foram muito
-	simpáticos. Recomendo."</p>
-	    			<strong>Aline Almeida</strong>
+	    			<p class="texto">“Registro aqui minha satisfação e só tenho elogios a equipe!”</p>
+	    			<strong>Valéria Pereira de Araujo</strong>
 	    			<div class="rating-stars">
 	    			<span class="fa fa-star checked"></span>
 					<span class="fa fa-star checked"></span>
@@ -247,32 +275,11 @@
 
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">>
+	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m5.jpg">
 	    			</div>
 	    			<div class="col-txt">
-	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
-	foi bem rápido, todos os atendentes e técnicos foram muito
-	simpáticos. Recomendo."</p>
-	    			<strong>Aline Almeida</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
-
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
-	foi bem rápido, todos os atendentes e técnicos foram muito
-	simpáticos. Recomendo."</p>
-	    			<strong>Aline Almeida</strong>
+	    			<p class="texto">“Parabéns à toda equipe!"</p>
+	    			<strong>Vivia Vieira Soares</strong>
 	    			<div class="rating-stars">
 	    			<span class="fa fa-star checked"></span>
 					<span class="fa fa-star checked"></span>

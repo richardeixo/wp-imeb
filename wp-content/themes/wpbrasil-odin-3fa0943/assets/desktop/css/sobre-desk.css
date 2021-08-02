@@ -1,5 +1,5 @@
 .main-content-sobre {
-    max-width: 980px;
+    max-width: 1170px;
     margin: auto;
     padding: 40px;
 }
@@ -24,7 +24,7 @@ p {
 .quadrante-azul {
     max-width: 280px;
     background: #0e7ac0;
-    padding: 15px;
+    padding: 25px;
     border-radius: 25px;  
 }
 .azuldois {
@@ -61,6 +61,7 @@ p {
 .azuis {
     margin-top: 20px;
     margin-bottom: 40px;
+	justify-content: center;
 }
 .primeiro-texto h2{
     margin-bottom: 20px;

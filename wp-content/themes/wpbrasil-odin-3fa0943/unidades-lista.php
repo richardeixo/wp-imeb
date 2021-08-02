@@ -11,7 +11,7 @@
 get_header($device); 
 
 if ($device == "desktop") {
-	include('assets/desktop/unidades-lista.php');
+	include('assets/desktop/unidades-display1.php');
 }else{
 	include('assets/mobile/unidades-lista-m.php');
 }

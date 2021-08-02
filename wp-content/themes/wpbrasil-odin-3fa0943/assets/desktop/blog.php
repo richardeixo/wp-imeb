@@ -59,17 +59,17 @@
     <div class="container">
         <div class="row">
             <div class="cards-conteudo">
-                <div class="card-conteudo">
+                <div class="card-conteudo conteudo-img">
                     <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
+                        <h3>Como é feito um diagnóstico de câncer? É possível dar falso positivo?</h3>
+                        <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
                     </div>
                 </div>
 
-                <div class="card-conteudo">
+                <div class="card-conteudo conteudo-img2">
                     <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
+                        <h3>Como escolher um oncologista?</h3>
+                        <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
                     </div>
                 </div>
 
@@ -80,37 +80,17 @@
 
         <div class="row">
             <div class="cards-conteudo">
-                <div class="card-conteudo">
+                <div class="card-conteudo conteudo-img3">
                     <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
+                        <h3>Como é feito o exame de PET/CT?</h3>
+                        <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
                     </div>
                 </div>
 
-                <div class="card-conteudo">
+                <div class="card-conteudo conteudo-img4">
                     <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
-                    </div>
-                </div>
-
-            </div>
-
-            
-        </div>
-                <div class="row">
-            <div class="cards-conteudo">
-                <div class="card-conteudo">
-                    <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
-                    </div>
-                </div>
-
-                <div class="card-conteudo">
-                    <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
+                        <h3>O que detecta o exame de PET-CT?</h3>
+                        <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
                     </div>
                 </div>
 
@@ -118,25 +98,6 @@
 
             
         </div>
-                <div class="row">
-            <div class="cards-conteudo">
-                <div class="card-conteudo">
-                    <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
-                    </div>
-                </div>
-
-                <div class="card-conteudo">
-                    <div class="texto-conteudo">
-                        <h3>Título que pode conter uma linha apenas ou várias delas.</h3>
-                        <a href="#"><button>Ver mais</button></a>
-                    </div>
-                </div>
-
-            </div>
-
-            
-        </div>
+                
         </div>
     </section>

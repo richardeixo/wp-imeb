@@ -17,7 +17,7 @@
 	<?php if ( ! get_option( 'site_icon' ) ) : ?>
 		<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
 	<?php endif; ?>
-	<?php wp_head(); ?>
+
 
 
 
@@ -39,17 +39,23 @@
         
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-exames-m.css">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-content-blog-m.css">
-        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-depoimento-m.css">
-
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-depoimentos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php }?>
+	
+	<?php  if (is_page('Blog')){ ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-content-blog-m.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
+	<?php }?>
 
-    <?php if (is_page('Materiais gratuitos')) {?>
+    <?php if (is_page('Materiais Gratuitos')) {?>
 
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/materiais-gratuitos/materiais-m.css">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/materiais-gratuitos/singlematerial.css">
 
     <?php } ?>
-    <?php if (is_page('Unidades lista')) {?>
+    <?php if (is_page('Unidades Lista')) {?>
 
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
@@ -65,16 +71,54 @@
 
 
 <?php } ?>
-<?php if (is_page('Exame single')) {?>
+<?php if (is_page('Single Exame')) {?>
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/unidades-m.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/single-exame/img-azul.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/single-exame/lowerbar.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/single-exame/tab-info-exames.css">
 
 
 <?php } ?>
+	<?php if (is_page('Fale Conosco')) {?>
+
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/ft-conosco/formd-m.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
 
 
+<?php } ?>
+<?php if (is_page('Trabalhe Conosco')) {?>
+
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/ft-conosco/formd-m.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
+
+<?php } ?>
+	<?php if (is_page('Corpo Clinico')) { ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/corpo-clinico/corpo-clinco.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
+<?php } ?>
+
+<?php if (is_page('Sobre')) {?>
+
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/sobre/sobre.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
+<?php } ?>
+	
+<?php if (is_page('Convenios')) { ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/convenios/convenios.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/style-searchbar-m.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/unidades/titulo-azul.css">
+<?php } ?>
+	
+	<?php if (is_page('Blog Exame')) {?>
+
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/blog-exame/style-blog-exame-m.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/single-exame/img-azul.css">
+<?php } ?>
+	
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-lowerbar-m.css">
 
 
@@ -100,7 +144,7 @@
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="#">
+               <a class="navbar-brand" href="<?php home_url() ?>/Imeb/">
                    <img alt="Brand" src="<?php bloginfo('template_directory') ?>/assets/images/logo.png" class="img-ico-menu-m">
                  </a>
                <a href="#"><button class="btn-menu-agendar">AGENDE SEU <br>EXAME</button></a>
@@ -122,30 +166,31 @@
                                <div class="panel-body">
                                    <div class="tab-content">
                                        <div class="tab-pane fade in active" id="tab1default">
-                                           <ul class="nav navbar-nav">
-                                               <li><a href="#">Home</a></li>
-                                               <li><a href="#">Agende</a></li>
-                                               <li><a href="#">Exames</a></li>
-                                               <li><a href="#">Convênios</a></li>
-                                               <li><a href="#">Unidades</a></li>
-                                               <li><a href="#">Resultado de Exames</a></li>
-                                               <li><a href="#">Cuida da sua Saúde</a></li>
-                                               <li><a href="#">Fale Conosco</a></li>
-                                               <li><a href="#">Materiais Gratuitos</a></li>
-                                           </ul>
+                                           <?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'menu-mobile',
+            'depth' => 2,
+            'container' => false,
+            'menu_class' => '',
+            'fallback_cb' => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker' => new Odin_Bootstrap_Nav_walker()
+        )
+    );
+?>
                                        </div>
    
                                        <div class="tab-pane fade in" id="tab2default">
                                            <ul class="nav navbar-nav">
-                                               <li><a href="#">Homea</a></li>
+                                               <li><a href="<?php home_url() ?>/Imeb/">Home</a></li>
                                                <li><a href="#">Agende</a></li>
                                                <li><a href="#">Exames</a></li>
-                                               <li><a href="#">Convênios</a></li>
-                                               <li><a href="#">Unidades</a></li>
+                                               <li><a href="<?php home_url() ?>/Imeb/convenios">Convênios</a></li>
+                                               <li><a href="<?php home_url() ?>/Imeb/unidades-lista">Unidades</a></li>
                                                <li><a href="#">Resultado de Exames</a></li>
-                                               <li><a href="#">Cuida da sua Saúde</a></li>
-                                               <li><a href="#">Fale Conosco</a></li>
-                                               <li><a href="#">Materiais Gratuitos</a></li>
+                                               <li><a href="<?php home_url() ?>/Imeb/blog">Cuida da sua Saúde</a></li>
+                                               <li><a href="<?php home_url() ?>/Imeb/fale-conosco">Fale Conosco</a></li>
+                                               <li><a href="<?php home_url() ?>/Imeb/materiais-gratuitos">Materiais Gratuitos</a></li>
                                            </ul>
                                        </div>
                                    </div>

@@ -8,7 +8,7 @@
                        <div class="rowb esearch">
                            <div class="search">
                                <button type="submit" class="searchButton">
-                                   <img src="./assets/imagens/searchbar/lupa.png" class="img-eixo">
+                                   <img src="<?php bloginfo('template_directory') ?>/assets/images/lupa.png" class="img-eixo">
                                 </button>
                                <input type="text" class="searchTerm" placeholder="O que você procura?">
                             </div>
@@ -28,7 +28,7 @@
        <section class="lista-unidades">
         <div class="conteudo">
             <div class="primeira-camada">
-                <img src="./assets/imagens/Screenshot_231.png">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/Screenshot_231.png">
                 <div class="textos">
                     <p>
                         <span>Centro Clínico Sul</span><br>
@@ -55,14 +55,14 @@
                         </span>
                     </p>
                 </div>
-                <a href="#">
+                <a href="<?php home_url() ?>/Imeb/unidades-single/">
                     <button>CONHEÇA MAIS <br>SOBRE A UNIDADE</button>
                 </a>
             </div>
         </div>
         <div class="conteudo">
             <div class="primeira-camada">
-                <img src="./assets/imagens/Screenshot_231.png">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/Screenshot_231.png">
                 <div class="textos">
                     <p>
                         <span>Centro Clínico Sul</span><br>
@@ -89,14 +89,14 @@
                         </span>
                     </p>
                 </div>
-                <a href="#">
+                <a href="<?php home_url() ?>/Imeb/unidades-single/">
                     <button>CONHEÇA MAIS <br>SOBRE A UNIDADE</button>
                 </a>
             </div>
         </div>
         <div class="conteudo">
             <div class="primeira-camada">
-                <img src="./assets/imagens/Screenshot_231.png">
+                <img src="<?php bloginfo('template_directory') ?>/assets/images/Screenshot_231.png">
                 <div class="textos">
                     <p>
                         <span>Centro Clínico Sul</span><br>
@@ -123,7 +123,7 @@
                         </span>
                     </p>
                 </div>
-                <a href="#">
+                <a href="<?php home_url() ?>/Imeb/unidades-single/">
                     <button>CONHEÇA MAIS <br>SOBRE A UNIDADE</button>
                 </a>
             </div>

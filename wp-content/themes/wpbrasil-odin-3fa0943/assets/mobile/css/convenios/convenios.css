@@ -1,0 +1,48 @@
+.search .convenios{
+	border: 2px solid #e4e5e5;
+    /* border-left: none; */
+    outline: none;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 15px;
+}
+.lista-convenios{
+	height: 80px;
+}
+.todos-convenios{
+	background: #0e7ac0;
+    display: block;
+    border: none;
+    margin: auto;
+    padding: 6px 50px;
+    font-family: 'Montserrat';
+    color: #fff;
+    font-weight: 700;
+    border-radius: 25px;
+}
+.txt-msg{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+	padding-bottom: 140px;
+}
+.txt-msg p{
+    text-align: center;
+    font-family: 'Montserrat';
+}
+.convenios-msg{
+	background: #fff;
+    display: block;
+    border: none;
+    margin: auto;
+    padding: 6px 70px;
+    font-family: 'Montserrat';
+    color: #0e7ac0;
+    font-weight: 700;
+    border-radius: 25px;
+    border: 1px solid #0e7ac0;
+}

@@ -13,7 +13,7 @@ get_header($device);
 if ($device == "desktop") {
 	include('assets/desktop/home.php');
 }else{
-	include('assets/mobile/home.php');
+	include('assets/mobile/home-m.php');
 }
 
 get_footer($device);

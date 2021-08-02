@@ -80,7 +80,7 @@
 								'theme_location' => 'main-menu',
 								'depth'          => 2,
 								'container'      => false,
-								'menu_class'     => 'nav navbar-nav',
+								'menu_class'     => 'menu menu-cliente',
 								'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
 								'walker'         => new Odin_Bootstrap_Nav_Walker()
 							)

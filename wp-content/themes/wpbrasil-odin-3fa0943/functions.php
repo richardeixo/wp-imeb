@@ -44,7 +44,7 @@ require_once get_template_directory() . '/core/classes/class-shortcodes.php';
 require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
 // require_once get_template_directory() . '/core/classes/class-theme-options.php';
 // require_once get_template_directory() . '/core/classes/class-options-helper.php';
-// require_once get_template_directory() . '/core/classes/class-post-type.php';
+ require_once get_template_directory() . '/core/classes/class-post-type.php';
 // require_once get_template_directory() . '/core/classes/class-taxonomy.php';
 // require_once get_template_directory() . '/core/classes/class-metabox.php';
 // require_once get_template_directory() . '/core/classes/abstracts/abstract-front-end-form.php';
@@ -333,3 +333,57 @@ if ( is_woocommerce_activated() ) {
 	require get_template_directory() . '/inc/woocommerce/functions.php';
 	require get_template_directory() . '/inc/woocommerce/template-tags.php';
 }
+register_nav_menus (
+  array (
+      'main-menu' => __( 'Main Menu', 'odin' ),
+            'footer-menu-1' => __( 'Menu Footer', 'odin' ),
+	  		'footer-menu-2' => __( 'Menu Footer Coluna 1', 'odin' ),
+			'footer-menu-3' => __( 'Menu Footer Coluna 2', 'odin' ),
+			'footer-menu-4' => __( 'Menu Footer Coluna 3', 'odin' ),
+	  		'menu-mobile' => __( 'Menu Mobile', 'odin' )
+  )
+);
+
+function post_corpoclinico() {
+    $corpoclinico = new Odin_Post_Type(
+        'Corpo Clínico', // Nome (Singular) do Post Type.
+        'corpo-clinico' // Slug do Post Type.
+    );
+
+    $corpoclinico->set_labels(
+        array(
+            'menu_name' => __( 'Corpo Clínico', 'odin' )
+        )
+    );
+
+    $corpoclinico->set_arguments(
+        array(
+            'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','custom-fields' ),
+            'menu_icon' => 'dashicons-buddicons-buddypress-logo'
+        )
+    );
+}
+
+add_action( 'init', 'post_slider', 1 );
+
+function post_slider() {
+    $slider = new Odin_Post_Type(
+        'Slider', // Nome (Singular) do Post Type.
+        'slider' // Slug do Post Type.
+    );
+
+    $slider->set_labels(
+        array(
+            'menu_name' => __( 'Slider', 'odin' )
+        )
+    );
+
+    $slider->set_arguments(
+        array(
+            'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','custom-fields' ),
+            'menu_icon' => 'dashicons-embed-photo'
+        )
+    );
+}
+
+add_action( 'init', 'post_slider', 1 );

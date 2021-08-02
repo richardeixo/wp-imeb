@@ -12,7 +12,7 @@ get_header($device);
 if ($device == "desktop") {
 	include('assets/desktop/blog.php');
 }else{
-	include('assets/mobile/blog-m.php');
+	include('assets/mobile/blog.php');
 }
 get_footer($device); 
 ?>

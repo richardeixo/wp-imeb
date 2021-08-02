@@ -6,28 +6,53 @@
  * @since 2.2.0
  */
 
-get_header(); ?>
+get_header($device); ?>
+ <?php
+while ( have_posts() ) : the_post(); ?>
 
-		<main id="content" class="<?php echo odin_classes_page_sidebar(); ?>" tabindex="-1" role="main">
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<section style="margin:0;" class="banner">
+        <div class="container-fluid container-eixo banner-eixo">
+            <div class="img-banner-blog" style="background-image: url(<?= get_the_post_thumbnail_url(); ?>)">               
+            </div>
+        </div>                  
+	</section>
 
-					/*
-					 * Include the post format-specific template for the content. If you want to
-					 * use this in a child theme, then include a file called called content-___.php
-					 * (where ___ is the post format) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				endwhile;
-			?>
-		</main><!-- #main -->
+	<section class="titulo-blog">
+		<div class="container titulo">
+			<h1><?= $post->post_title;?></h1>
+		</div>
+	</section>
+	
+	<section class="blog-exame">
+		<div class="container box-conteudo-blog">
+			<div class="conteudo-blog">
+				<?php the_content(); ?>
+			</div>
+		</div>
+	</section>
+</article>
 
 <?php
-get_sidebar();
-get_footer();
+endwhile;
+function my_related_posts() {
+$args = array('posts_per_page' => 3, 'post_in' => get_the_tag_list());
+$the_query = new WP_Query( $args );?>
+
+<section class="relacionados-blog">
+		<div class="container box-conteudo c-relacionados">
+			<p><center><strong>Conteúdos Relacionados</strong></center></p>
+			<div class="img-relacionados">
+			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<figure>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+					<a href="<?php the_permalink(); ?>"><figcaption><?php the_title(); ?></figcaption></a>
+				</figure>
+			<?php endwhile; ?>
+			</div>
+		</div>
+</section>
+<?php
+}
+echo my_related_posts();
+get_footer($device); ?>

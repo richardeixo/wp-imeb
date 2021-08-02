@@ -43,9 +43,9 @@
 				<div class="unidade-conteudo">
 					<div class="titulo-redes">
 						<h3>Centro Clínico Sul</h3>
-						<img src="<?php bloginfo('template_directory') ?>/assets/images/fb2.png">
-						<img src="<?php bloginfo('template_directory') ?>/assets/images/ig2.png">
-						<img src="<?php bloginfo('template_directory') ?>/assets/images/in2.png">
+						<a href="https://www.facebook.com/clinicaimeb/" target="_blank"><img src="<?php bloginfo('template_directory') ?>/assets/images/fb2.png"></a>
+						<a href="https://www.instagram.com/clinicaimeb/" target="_blank"><img src="<?php bloginfo('template_directory') ?>/assets/images/ig2.png"></a>
+						<a href="https://www.linkedin.com/company/clinicaimeb/" target="_blank"><img src="<?php bloginfo('template_directory') ?>/assets/images/in2.png"></a>
 					</div>
 					<p><strong><i>Torre I</i></strong></p>
 					<p>SHLS 716 conj. L, Centro Clínico Sul Torre I
@@ -58,10 +58,10 @@ sala T223, Brasília- DF – CEP: 70390-700</p>
 Saúde sala W162, Brasília- DF – CEP: 70390-700</p>
 					<div class="fone-btn">
 						<div class="fone">
-							<img src="<?php bloginfo('template_directory') ?>/assets/images/fb2.png"><p>(61) 3326 0033 | 3771 3800</p><br/>
-							<img src="<?php bloginfo('template_directory') ?>/assets/images/fb2.png"><p>(61) 9976-4074</p>
+							<img src="<?php bloginfo('template_directory') ?>/assets/images/icon-fone.png"><p>(61) 3326 0033 | 3771 3800</p><br/>
+							<img src="<?php bloginfo('template_directory') ?>/assets/images/icon-wpp.png"><p>(61) 9976-4074</p>
 						</div>
-						<button>CONHEÇA MAIS<br/> SOBRE A UNIDADE</button>
+						<a href="<?php home_url() ?>/Imeb/unidades-single/"><button>CONHEÇA MAIS<br/> SOBRE A UNIDADE</button></a>
 					</div>
 				</div>
 			</div>

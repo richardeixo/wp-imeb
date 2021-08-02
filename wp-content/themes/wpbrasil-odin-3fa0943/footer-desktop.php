@@ -16,24 +16,27 @@
     		<div class="footer-info">  		
     			<img src="<?php bloginfo('template_directory') ?>/assets/images/logo.png">
     			<nav class="f-menu">
-				<ul>
-					<li><a href="#">Exames</a></li>
-					<li><a href="#">Convênios</a></li>
-					<li><a href="#">Resultado de Exames</a></li>
-					<li><a href="#">Unidades</a></li>
-					<li><a href="#">Cuide da sua Saúde</a></li>
-					<li><a href="#">Fale Conosco</a></li>
-					<li><a href="#">Materiais Gratuitos</a></li>
-				</ul>
+				<?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'footer-menu-1',
+            'depth' => 2,
+            'container' => false,
+            'menu_class' => '',
+            'fallback_cb' => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker' => new Odin_Bootstrap_Nav_walker()
+        )
+    );
+?>
 				</nav>
 			</div>
 
 			<div class="footer-menu">  		
     			<div class="footer-esq">
 					<div class="f-rsociais">
-						<a href="#"><div class="f-ico-fb"></div></a>
-						<a href="#"><div class="f-ico-ig"></div></a>
-						<a href="#"><div class="f-ico-in"></div></a>
+						<a href="https://www.facebook.com/clinicaimeb/" target="_blank"><div class="f-ico-fb"></div></a>
+						<a href="https://www.instagram.com/clinicaimeb/" target="_blank"><div class="f-ico-ig"></div></a>
+						<a href="https://www.linkedin.com/company/clinicaimeb/" target="_blank"><div class="f-ico-in"></div></a>
 					</div>
 					<h1>CENTRAL DE ATENDIMENTO</h1>
 					<p><img style="margin-right: 10px; width: 19px;" src="<?php bloginfo('template_directory') ?>/assets/images/icon-fone.png">(61) 3326 0033 | 3771 3800</p>
@@ -42,28 +45,48 @@
 				</div>
 				<div class="widgets">
 				<div class="widget-um">
-					<a href="#">Ecografia</a>
-					<a href="#">Cintilografia</a>
-					<a href="#">Densitometria Óssea</a>
-					<a href="#">Mamografia e Biópsias</a>
-					<a href="#">PET-CT</a>
-					<a href="#">Ressonâcia Magnética</a>
-					<a href="#">Tomografia Personalizada</a>
-					<a href="#">Suíte Terapêutica</a>
+					<?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'footer-menu-2',
+            'depth' => 2,
+            'container' => false,
+            'menu_class' => 'menu-footer-link f-coluna-1',
+            'fallback_cb' => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker' => new Odin_Bootstrap_Nav_walker()
+        )
+    );
+?>
 				</div>
 
 				<div class="widget-dois">
-					<a href="#">Aviso de Privacidade Website</a>
-					<a href="#">Aviso de Privacidade - Serviços de Saúde</a>
-					<a href="#">Responsabilidade social</a>
-					<a href="#">Corpo Clínico</a>
-					<a href="#">Trabalhe Conosco</a>
+					<?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'footer-menu-3',
+            'depth' => 2,
+            'container' => false,
+            'menu_class' => 'menu-footer-link f-coluna-2',
+            'fallback_cb' => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker' => new Odin_Bootstrap_Nav_walker()
+        )
+    );
+?>
 				</div>
 
 				<div class="widget-tres">
-					<a href="#">Convênios</a>
-					<a href="#">WEBMAIL</a>
-					<a href="#">SISTEMA EPA</a>
+					<?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'footer-menu-4',
+            'depth' => 2,
+            'container' => false,
+            'menu_class' => 'menu-footer-link',
+            'fallback_cb' => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker' => new Odin_Bootstrap_Nav_walker()
+        )
+    );
+?>
 					</div>
 				</div>
 			</div>
@@ -122,7 +145,7 @@ DF – CEP: 72405-499</p>
     				<span>Responsável Técnico: Alaor Barra Sobrinho - CRM-DF 3029</span>
     			</div>
     			<div class="eixo">
-    				Powered By: <img src="<?php bloginfo('template_directory') ?>/assets/images/eixo-logo.png">
+					Powered By: <a href="https://eixo.digital/"><img src="<?php bloginfo('template_directory') ?>/assets/images/eixo-logo.png"></a>
     			</div>
     			</div>
     		</div>

@@ -1,4 +1,3 @@
-
 	<section style="margin: 0" class="banner">
         <div class="container-fluid container-eixo banner-eixo">
             <div class="img-banner">                
@@ -67,8 +66,8 @@
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
 					<div class="map-detalhe">
-						<a href="">Ver no mapa</a>
-						<a href="">Ver detalhes</a>
+						<a href="https://g.page/IMEB-Unidade-Buriti?share">Ver no mapa</a>
+						<a href="<?php home_url() ?>/Imeb/unidades-single/">Ver detalhes</a>
 					</div>
 				</div>
 			</div>
@@ -79,8 +78,8 @@
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
 					<div class="map-detalhe">
-						<a href="">Ver no mapa</a>
-						<a href="">Ver detalhes</a>
+						<a href="https://g.page/IMEB-Unidade-Buriti?share">Ver no mapa</a>
+						<a href="<?php home_url() ?>/Imeb/unidades-single/">Ver detalhes</a>
 					</div>
 				</div>
 			</div>
@@ -91,8 +90,8 @@
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
 					<div class="map-detalhe">
-						<a href="">Ver no mapa</a>
-						<a href="">Ver detalhes</a>
+						<a href="https://g.page/IMEB-Unidade-Buriti?share">Ver no mapa</a>
+						<a href="<?php home_url() ?>/Imeb/unidades-single/">Ver detalhes</a>
 					</div>
 				</div>
 			</div>
@@ -103,8 +102,8 @@
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
 					<div class="map-detalhe">
-						<a href="">Ver no mapa</a>
-						<a href="">Ver detalhes</a>
+						<a href="https://g.page/IMEB-Unidade-Buriti?share">Ver no mapa</a>
+						<a href="<?php home_url() ?>/Imeb/unidades-single/">Ver detalhes</a>
 					</div>
 				</div>
 			</div>
@@ -115,8 +114,8 @@
 					<h3>Centro Clínico Norte II</h3>
 					<h4>SCLN 116 Bloco H loja 33, Edifício Buriti – Térreo Brasília- DF – CEP: 70710-100</h4>
 					<div class="map-detalhe">
-						<a href="">Ver no mapa</a>
-						<a href="">Ver detalhes</a>
+						<a href="https://g.page/IMEB-Unidade-Buriti?share">Ver no mapa</a>
+						<a href="<?php home_url() ?>/Imeb/unidades-single/">Ver detalhes</a>
 					</div>
 				</div>
 			</div>
@@ -181,9 +180,9 @@ doenças, assim como para avaliar a resposta a diversos tratamentos.</p>
 			<div class="card-exame-video">
                 <iframe width="100%" height="250" src="https://www.youtube.com/embed/P8A2iXI2JdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
-                <iframe width="100%" height="250" src="https://www.youtube.com/embed/P8A2iXI2JdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/8DcgDBVjW_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            
-                <iframe width="100%" height="250" src="https://www.youtube.com/embed/P8A2iXI2JdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/kgHeTzudDnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 		</div>
 	</section>

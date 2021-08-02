@@ -86,6 +86,8 @@
 	display: inline-flex;
     gap: 10px;
     margin-top: 20px;
+	justify-content: center;
+    width: 100%;
 }
 .img-relacionados figure img{
 	width: 100%;
@@ -98,4 +100,5 @@
 .img-relacionados figcaption{
 	font-family: 'Montserrat';
 	font-weight: 600;
+	color: #333;
 }

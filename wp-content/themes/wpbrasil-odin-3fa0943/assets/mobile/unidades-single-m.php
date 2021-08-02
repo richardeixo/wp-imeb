@@ -1,5 +1,5 @@
 <section class="titulo-materiais">
-        <h1>Materiais Gratuitos</h1>
+        <h1>Unidade Centro Clínico Sul</h1>
     </section>
     <section class="searchbar">
            <div class="container-fluid container-eixo">
@@ -8,7 +8,7 @@
                        <div class="rowb esearch">
                            <div class="search">
                                <button type="submit" class="searchButton">
-                                   <img src="./assets/imagens/searchbar/lupa.png" class="img-eixo">
+                                   <img src="<?php bloginfo('template_directory') ?>/assets/images/searchbar/lupa.png" class="img-eixo">
                                 </button>
                                <input type="text" class="searchTerm" placeholder="O que você procura?">
                             </div>
@@ -26,7 +26,7 @@
        </section>
 <section class="conteudo">
         <div class="primeira-camada">
-            <img src="./assets/imagens/Screenshot_231.png">
+            <img src="<?php bloginfo('template_directory') ?>/assets/images/Screenshot_231.png">
             <div class="textos">
                 <p>
                     <span>Centro Clínico Sul</span><br>

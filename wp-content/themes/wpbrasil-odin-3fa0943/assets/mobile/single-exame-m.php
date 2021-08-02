@@ -1,4 +1,3 @@
-
     <section class="imgazul">
         <div class="container-fluid container-eixo">  
             <div class="objeto-imgazul">
@@ -28,7 +27,7 @@
                                 <div class="listaunidades-tab-exames">
                                     <div class="card-unidade-exame-lista">
                                         <div class="pin-unidade-exame">
-                                            <img src="#">
+                                            <img width="25px" src="<?php bloginfo('template_directory') ?>/assets/images/pin.png">
                                         </div>
                                         <div class="text-unidade-exame">
                                             <h3>Centro Clínico Norte II</h3>
@@ -43,7 +42,7 @@
                                     </div>
                                     <div class="card-unidade-exame-lista">
                                         <div class="pin-unidade-exame">
-                                            <img src="#">
+                                            <img width="25px" src="<?php bloginfo('template_directory') ?>/assets/images/pin.png">
                                         </div>
                                         <div class="text-unidade-exame">
                                             <h3>Centro Clínico Norte II</h3>
@@ -58,7 +57,7 @@
                                     </div>
                                     <div class="card-unidade-exame-lista">
                                         <div class="pin-unidade-exame">
-                                            <img src="#">
+                                            <img width="25px" src="<?php bloginfo('template_directory') ?>/assets/images/pin.png">
                                         </div>
                                         <div class="text-unidade-exame">
                                             <h3>Centro Clínico Norte II</h3>
@@ -102,8 +101,8 @@
                                         pontuais sobre o seu exame.
                                     </p>
                                     <div class="sociais-exame">
-                                        <img src="#">
-                                        <img src="#">
+                                        <img src="<?php bloginfo('template_directory') ?>/assets/images/fb.png">
+                                        <img src="<?php bloginfo('template_directory') ?>/assets/images/in.png">
                                     </div>
                                 </div>
                                 
@@ -119,7 +118,7 @@
 
 
                         </div>
-                        <div class="tab-pane fade" id="tab2primary">
+                        <div style="padding-bottom: 40px;" class="tab-pane fade" id="tab2primary">
                             <div class="texto-orientacoes">
                                 <h2>PREPARO</h2>
                                 <ul>

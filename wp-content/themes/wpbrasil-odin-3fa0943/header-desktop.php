@@ -23,6 +23,8 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-depoimentos.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-searchbar.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-materiais.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-banner.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-blog-exame.css">
 <?php  if (is_page('Sobre')){ ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/sobre-desk.css">
 <?php }?>
@@ -37,8 +39,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-banner.css">
 <?php } ?>
 <?php if (is_page('Materiais Gratuitos')) { ?>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-blog-exame.css">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames-banner.css">
+	
+	
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-materiais.css">
 <?php } ?>
 <?php if (is_page('Materiais Single')) { ?>
@@ -65,6 +67,15 @@
 <?php if (is_page('Convenios')) { ?>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/convenios.css">
 <?php } ?>
+	
+	<?php if (is_page('Unidades Single')) { ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/unidades-desk.css">
+<?php } ?>
+	
+	<?php if (is_page('Unidades Lista')) { ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-unidades.css">
+<?php } ?>
+	
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -131,7 +142,7 @@ function closeNav() {
 	<div class="container top">
 		<div class="row top-bar">
 			<div class="col-md-6 top-left">
-				<img src="<?php bloginfo('template_directory') ?>/assets/images/logo.png" />
+				<a href="<?php home_url() ?>/Imeb/"><img src="<?php bloginfo('template_directory') ?>/assets/images/logo.png" /></a>
 				<div class="tab-climed">
 					<ul>
 						<li><button id="btn-cliente" class="ativa" onclick="cliente()">Cliente</button></li>
@@ -141,9 +152,9 @@ function closeNav() {
 			</div>
 			<div class="col-md-6 top-right">
 				<div class="rsociais">
-					<a href="#"><div class="ico-fb"></div></a>
-					<a href="#"><div class="ico-ig"></div></a>
-					<a href="#"><div class="ico-in"></div></a>
+					<a href="https://www.facebook.com/clinicaimeb/" target="_blank"><div class="ico-fb"></div></a>
+					<a href="https://www.instagram.com/clinicaimeb/" target="_blank"><div class="ico-ig"></div></a>
+					<a href="https://www.linkedin.com/company/clinicaimeb/" target="_blank"><div class="ico-in"></div></a>
 				</div>
 				<button type="button" class="btn btn-primary btn-agende">AGENDE <br/>SEU EXAME</button>
 			</div>
@@ -155,14 +166,19 @@ function closeNav() {
 			<button class="btn-exames" onclick="ocultarExibir()"> <img width="10px" id="img-exam" class="img-ativa" src="<?php bloginfo('template_directory') ?>/assets/images/down.svg">Exames</button>
 
 			<nav class="menu menu-cliente" id="menu-cliente">
-				<ul>
-					<li><a href="#">Convênios</a></li>
-					<li><a href="#">Resultado de Exames</a></li>
-					<li><a href="#">Unidades</a></li>
-					<li><a href="#">Cuide da sua Saúde</a></li>
-					<li><a href="#">Fale Conosco</a></li>
-					<li><a href="#">Materiais Gratuitos</a></li>
-				</ul>
+				<?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'main-menu',
+            'depth' => 2,
+            'container' => false,
+            'menu_class' => '',
+            'fallback_cb' => 'Odin_Bootstrap_Nav_Walker::fallback',
+            'walker' => new Odin_Bootstrap_Nav_walker()
+        )
+    );
+?>
+
 			</nav>
 
 			<nav class="menu menu-medico" id="menu-medico">
@@ -176,76 +192,76 @@ function closeNav() {
 
 				<div class="coluna">
 					<span class="title-exam">Ecografia</span>
-					<a href="#">Cervical</a>
-					<a href="#">Bolsa escrotal</a>
-					<a href="#">Fossa clavicular</a>
-					<a href="#">Paratireóide</a>
-					<a href="#">Parede abdominal</a>
-					<a href="#">Parótica</a>
-					<a href="#">Próstata via abdominal</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Cervical</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Bolsa escrotal</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Fossa clavicular</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Paratireóide</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Parede abdominal</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Parótica</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Próstata via abdominal</a>
 					<button class="btn-drop" type="button">VER TODOS</button>
 				</div>
 
 				<div class="coluna">
 					<span class="title-exam">Cintilografia</span>
-					<a href="#">Metaiodobenzilguanidina</a>
-					<a href="#">Tireoide com captação</a>
-					<a href="#">Paratireoides</a>
-					<a href="#">Fígado e baço</a>
-					<a href="#">Perfusão Cerebral</a>
-					<a href="#">Fígado e Vias Biliares</a>
-					<a href="#">Miocárdica</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Metaiodobenzilguanidina</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Tireoide com captação</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Paratireoides</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Fígado e baço</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Perfusão Cerebral</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Fígado e Vias Biliares</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/#">Miocárdica</a>
 					<button class="btn-drop" type="button">VER TODOS</button>
 				</div>
 
 				<div class="coluna">
 					<span class="title-exam">Mamografia</span>
-					<a href="#">Com contraste</a>
-					<a href="#">Por Ecografia</a>
-					<a href="#">Por mamografia</a>
-					<a href="#">Digital de Campo Total</a>
-					<a href="#">Por Ecografia</a>
-					<a href="#">Por mamografia</a>
-					<a href="#">Por Ressonância Magnética</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Com contraste</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Por Ecografia</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Por mamografia</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Digital de Campo Total</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Por Ecografia</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Por mamografia</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Por Ressonância Magnética</a>
 				</div>
 
 				<div class="coluna">
 					<span class="title-exam">Ressonância Magnética</span>
-					<a href="#">Colangioressonância</a>
-					<a href="#">Enteroressonância</a>
-					<a href="#">Articulação Coxo-femoral</a>
-					<a href="#">Articulação Sacro-Ilíaca</a>
-					<a href="#">Articulação temporomandibular</a>
-					<a href="#">Coluna</a>
-					<a href="#">Coxa</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Colangioressonância</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Enteroressonância</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Articulação Coxo-femoral</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Articulação Sacro-Ilíaca</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Articulação temporomandibular</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Coluna</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Coxa</a>
 					<button class="btn-drop" type="button">VER TODOS</button>
 				</div>
 
 				<div class="coluna">
 					<span class="title-exam">Tomografia Computadorizada</span>
-					<a href="#">Mastóide</a>
-					<a href="#">Órbitas</a>
-					<a href="#">Abdome total</a>
-					<a href="#">Crânio</a>
-					<a href="#">Tórax</a>
-					<a href="#">Seios da face</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Mastóide</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Órbitas</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Abdome total</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Crânio</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Tórax</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Seios da face</a>
 				</div>
 
 				<div class="coluna">
 					<span class="title-exam">Densitometria Óssea</span>
-					<a href="#">Coluna, Fêmur e Antebraço ou Rádio Distal</a>
-					<a href="#">Corpo Inteiro</a>
-					<a href="#">Vertebral ou LVA</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Coluna, Fêmur e Antebraço ou Rádio Distal</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Corpo Inteiro</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Vertebral ou LVA</a>
 				</div>
 
 				<div class="coluna">
 					<span class="title-exam">Suíte Terapêutica</span>
-					<a href="#">Suíte Terapêutica</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">Suíte Terapêutica</a>
 				</div>
 
 				<div class="coluna">
 					<span class="title-exam">PET-CT</span>
-					<a href="#">PET-CT</a>
+					<a href="<?php home_url() ?>/Imeb/single-exame/">PET-CT</a>
 				</div>
 
 			</div>

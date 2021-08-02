@@ -1,4 +1,3 @@
-
     <section class="titulo-materiais">
         <h1>Materiais Gratuitos</h1>
     </section>
@@ -16,7 +15,7 @@
                         <div class="lista-ebooks">
                             <div class="um-lista-ebook">
                                 <div class="content-lista-unica">
-                                    <img src="./assets/imagens/ebooks/Retângulo 24.png">
+                                    <img src="<?php bloginfo('template_directory') ?>/assets/images/ebooks/ret24.png">
                                     <h2>O novo Coronavírus</h2>
                                     <p>
                                         O novo coronavírus pegou
@@ -31,7 +30,7 @@
                                     </p>
                                 </div>
                                 <div class="content-lista-unica">
-                                    <img src="./assets/imagens/ebooks/Retângulo 24.png">
+                                    <img src="<?php bloginfo('template_directory') ?>/assets/images/ebooks/ret24.png">
                                     <h2>O novo Coronavírus</h2>
                                     <p>
                                         O novo coronavírus pegou
@@ -46,7 +45,7 @@
                                     </p>
                                 </div>
                                 <div class="content-lista-unica">
-                                    <img src="./assets/imagens/ebooks/Retângulo 24.png">
+                                    <img src="<?php bloginfo('template_directory') ?>/assets/images/ebooks/ret24.png">
                                     <h2>O novo Coronavírus</h2>
                                     <p>
                                         O novo coronavírus pegou
@@ -67,7 +66,7 @@
                         <div class="lista-ebooks">
                             <div class="um-lista-ebook">
                                 <div class="content-lista-unica">
-                                    <img src="./assets/imagens/ebooks/Retângulo 24.png">
+                                    <img src="<?php bloginfo('template_directory') ?>/assets/images/ebooks/ret24.png">
                                     <h2>O novo Coronavírus</h2>
                                     <p>
                                         O novo coronavírus pegou
@@ -82,7 +81,7 @@
                                     </p>
                                 </div>
                                 <div class="content-lista-unica">
-                                    <img src="./assets/imagens/ebooks/Retângulo 24.png">
+                                    <img src="<?php bloginfo('template_directory') ?>/assets/images/ebooks/ret24.png">
                                     <h2>O novo Coronavírus</h2>
                                     <p>
                                         O novo coronavírus pegou
@@ -97,7 +96,7 @@
                                     </p>
                                 </div>
                                 <div class="content-lista-unica">
-                                    <img src="./assets/imagens/ebooks/Retângulo 24.png">
+                                    <img src="<?php bloginfo('template_directory') ?>/assets/images/ebooks/ret24.png">
                                     <h2>O novo Coronavírus</h2>
                                     <p>
                                         O novo coronavírus pegou
@@ -116,39 +115,5 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-            
-        
-
-    <section class="barra-fixa">
-        <div class="container-fluid container-eixo lowerbar">
-            <div class="lower-bar">
-                <div class="quadrante">
-                    <a href="#"></a>
-                    <img src="./assets/imagens/barra-fixa-mobile/resultado.png" class="img-fluid lower-img-eixo">
-                    </a>
-                </div>
-                <div class="quadrante">
-                    <a href="#"></a>
-                    <img src="./assets/imagens/barra-fixa-mobile/agenda.png" class="img-fluid lower-img-eixo">
-                    </a>
-                </div>
-                <div class="quadrante">
-                    <a href="#"></a>
-                    <img src="./assets/imagens/barra-fixa-mobile/azulogo.png" class="img-fluid lower-img-eixo alogoazul">
-                    </a>
-                </div>
-                <div class="quadrante">
-                    <a href="#"></a>
-                    <img src="./assets/imagens/barra-fixa-mobile/whatsapp.png" class="img-fluid lower-img-eixo">
-                    </a>
-                </div>
-                <div class="quadrante">
-                    <a href="#"></a>
-                    <img src="./assets/imagens/barra-fixa-mobile/fone.png" class="img-fluid lower-img-eixo">
-                    </a>
-                </div>
-            </div>            
         </div>
     </section>

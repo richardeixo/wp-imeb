@@ -72,6 +72,19 @@
 	color: #000;
 	margin-bottom: 5px;
 }
+.menu-footer-link{
+	display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-weight: 500;
+}
+.f-coluna-1{
+	padding: 0;
+}
+.f-coluna-2{
+	padding: 0;
+    width: 150%;
+}
 .azul{
 	background: #0076BF;
 }
