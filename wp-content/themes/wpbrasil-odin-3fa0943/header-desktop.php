@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/header.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-exames.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-content-blog.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/unidades-desk.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-newsletter.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-unidades-home.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/style-footer.css">
@@ -69,7 +70,7 @@
 <?php } ?>
 	
 	<?php if (is_page('Unidades Single')) { ?>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/desktop/css/unidades-desk.css">
+	
 <?php } ?>
 	
 	<?php if (is_page('Unidades Lista')) { ?>

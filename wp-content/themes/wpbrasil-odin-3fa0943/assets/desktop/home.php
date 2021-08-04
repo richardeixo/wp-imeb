@@ -6,6 +6,13 @@ $args = array(
 $the_query = new WP_Query( $args );
 $count = $the_query->found_posts;
 ?>
+<?php
+$args1 = array(
+    'post_type'=> 'depoimentos',
+    'order'    => 'ASC'
+    );    
+$the_query_depo = new WP_Query( $args1 );
+?>
 <section class="slider">
         <div class="container-fluid container-eixo slider-eixo">  
 
@@ -186,32 +193,17 @@ $count = $the_query->found_posts;
     	<div class="container">
     		<h1>DEPOIMENTOS DE NOSSOS CLIENTES</h1>
     		<div class="depoimento-full">
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m1.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
-	foi bem rápido, todos os atendentes e técnicos foram muito
-	simpáticos. Recomendo."</p>
-	    			<strong>Aline Almeida</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
+				
+				<?php
 
+            foreach ($the_query_depo->posts as $key => $post) { ?>
 	    		<div class="card-depoimento">
 	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m2.jpg">
+	    			<img src="<?=get_the_post_thumbnail_url($post->ID) ?>">
 	    			</div>
 	    			<div class="col-txt">
-	    			<p class="texto">“Há tempos conheço o IMEB, desde o começo me apaixonei e hoje mora no meu coração. A Higiene é nota 10, médicos atenciosos e inteligentes, recepção acolhedora, nos orienta nos exames. Tenho muita confiança. Parabéns para a Kelly, funcionária que nos acolhe e acalma na hora da injeção. Bravo para todas as unidades do IMEB."</p>
-	    			<strong>Sonia Teixeira Mendes de Souza</strong>
+	    			<p class="texto"><?=  $post->post_content ?></p>
+	    			<strong><?= $post->post_title;?></strong>
 	    			<div class="rating-stars">
 	    			<span class="fa fa-star checked"></span>
 					<span class="fa fa-star checked"></span>
@@ -221,74 +213,8 @@ $count = $the_query->found_posts;
 					</div>
 					</div>
 	    		</div>
-
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m3.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Minha irmã, Vanessa Angélica, foi tratada com muito carinho e, estando insegura em relação ao exame, foi tranquilizada. Tudo correu bem. Obrigado!.”</p>
-	    			<strong>Isis G. Coelho Chaves</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
-
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Elogio ao Dr. Leonardo Prado, quanto ao profissionalismo e humildade na revisão dos resultados. Parabéns!”</p>
-	    			<strong>Marcos Antônio P. Moraes</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
-
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m4.jpg">>
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Registro aqui minha satisfação e só tenho elogios a equipe!”</p>
-	    			<strong>Valéria Pereira de Araujo</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
-
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m5.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Parabéns à toda equipe!"</p>
-	    			<strong>Vivia Vieira Soares</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
+				<?php } ?>
+	    		
 	    	</div>
     	</div>
     </section>

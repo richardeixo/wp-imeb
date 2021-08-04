@@ -1,3 +1,10 @@
+<?php
+$args = array(
+    'post_type'=> 'unidades',
+    'order'    => 'ASC'
+    );    
+$the_query = new WP_Query( $args );
+?>
 	<section style="margin:0;" class="banner">
         <div class="container-fluid container-eixo banner-eixo">
             <div class="blue-banner">                
@@ -38,33 +45,30 @@
 	<section style="margin-top: -80px;" class="box-exame-conteudo">
 		<div class="container box-conteudo">
 
+			<?php
+
+            foreach ($the_query->posts as $key => $post) { 
+			$link = str_replace('http://', 'https://', $post->guid);?>
 			<div class="card-unidade">
-				<img src="<?php bloginfo('template_directory') ?>/assets/images/componente.png">
+				<img src="<?=get_the_post_thumbnail_url($post->ID) ?>">
 				<div class="unidade-conteudo">
 					<div class="titulo-redes">
-						<h3>Centro Clínico Sul</h3>
-						<a href="https://www.facebook.com/clinicaimeb/" target="_blank"><img src="<?php bloginfo('template_directory') ?>/assets/images/fb2.png"></a>
-						<a href="https://www.instagram.com/clinicaimeb/" target="_blank"><img src="<?php bloginfo('template_directory') ?>/assets/images/ig2.png"></a>
-						<a href="https://www.linkedin.com/company/clinicaimeb/" target="_blank"><img src="<?php bloginfo('template_directory') ?>/assets/images/in2.png"></a>
+						<h3><?= $post->post_title;?></h3>
+						<a href="<?php echo get_post_meta($post->ID, 'ico-facebook', true); ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/assets/images/fb2.png"></a>
+						<a href="<?php echo get_post_meta($post->ID, 'ico-instagram', true); ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/assets/images/ig2.png"></a>
+						<a href="<?php echo get_post_meta($post->ID, 'ico-linkedin', true); ?>" target="_blank"><img src="<?php bloginfo('template_directory') ?>/assets/images/in2.png"></a>
 					</div>
-					<p><strong><i>Torre I</i></strong></p>
-					<p>SHLS 716 conj. L, Centro Clínico Sul Torre I
-salas T121/124, Brasília- DF – CEP: 70390-700</p>
-					<p><i><strong>Torre II</strong> (Tomografia)</i></strong></p>
-					<p>SHLS 716 conj. L, Centro Clínico Sul Torre II
-sala T223, Brasília- DF – CEP: 70390-700</p>
-					<p><i><strong>Torre II</strong> (Medicina Nuclear)</i></p>
-					<p>SHLS 716 conj. L, Centro Clínico Sul Praça da
-Saúde sala W162, Brasília- DF – CEP: 70390-700</p>
+					<?=  $post->post_content ?>
 					<div class="fone-btn">
 						<div class="fone">
-							<img src="<?php bloginfo('template_directory') ?>/assets/images/icon-fone.png"><p>(61) 3326 0033 | 3771 3800</p><br/>
-							<img src="<?php bloginfo('template_directory') ?>/assets/images/icon-wpp.png"><p>(61) 9976-4074</p>
+							<img src="<?php bloginfo('template_directory') ?>/assets/images/icon-fone.png"><p><?php echo get_post_meta($post->ID, 'fone', true); ?></p><br/>
+							<img src="<?php bloginfo('template_directory') ?>/assets/images/icon-wpp.png"><p><?php echo get_post_meta($post->ID, 'whatsapp', true); ?></p>
 						</div>
-						<a href="<?php home_url() ?>/Imeb/unidades-single/"><button>CONHEÇA MAIS<br/> SOBRE A UNIDADE</button></a>
+						<a href="<?= $link ?>"><button>CONHEÇA MAIS<br/> SOBRE A UNIDADE</button></a>
 					</div>
 				</div>
 			</div>
+			<?php } ?>
 
 		</div>
 	</section>

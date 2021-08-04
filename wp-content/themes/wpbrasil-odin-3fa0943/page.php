@@ -10,7 +10,7 @@
  * @since 2.2.0
  */
 
-get_header(); ?>
+get_header($device); ?>
 
 	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
 
@@ -31,4 +31,4 @@ get_header(); ?>
 	</main><!-- #main -->
 
 <?php
-get_footer();
+get_footer($device);
