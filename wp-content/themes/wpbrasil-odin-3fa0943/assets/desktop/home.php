@@ -1,18 +1,4 @@
-<?php
-$args = array(
-    'post_type'=> 'slider',
-    'order'    => 'ASC'
-    );    
-$the_query = new WP_Query( $args );
-$count = $the_query->found_posts;
-?>
-<?php
-$args1 = array(
-    'post_type'=> 'depoimentos',
-    'order'    => 'ASC'
-    );    
-$the_query_depo = new WP_Query( $args1 );
-?>
+
 <section class="slider">
         <div class="container-fluid container-eixo slider-eixo">  
 
@@ -25,7 +11,12 @@ $the_query_depo = new WP_Query( $args1 );
             foreach ($the_query->posts as $key => $post) { 
 					if($c_slide == 0){?>
                     <div class="item active">
-                        <div class="objeto-slider">
+                        <div class="objeto-slider" style="background: linear-gradient(
+0deg
+, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url(<?=get_the_post_thumbnail_url($post->ID) ?>);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
                             <div class="texto-slider">
                                 <h1>
                                     <?= $post->post_title;?>
@@ -39,7 +30,12 @@ $the_query_depo = new WP_Query( $args1 );
             <?php
             }else{?>
 					<div class="item">
-                        <div class="objeto-slider">
+                        <div class="objeto-slider" style="background: linear-gradient(
+0deg
+, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url(<?=get_the_post_thumbnail_url($post->ID) ?>);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;"">
                             <div class="texto-slider">
                                 <h1>
                                     <?= $post->post_title;?>

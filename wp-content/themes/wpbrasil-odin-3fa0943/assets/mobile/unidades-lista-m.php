@@ -27,105 +27,31 @@
 
        <section class="lista-unidades">
         <div class="conteudo">
+            <?php
+
+            foreach ($the_query->posts as $key => $post) { 
+            $link = str_replace('http://', 'https://', $post->guid);?>
             <div class="primeira-camada">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/Screenshot_231.png">
+                <img src="<?=get_the_post_thumbnail_url($post->ID) ?>">
                 <div class="textos">
                     <p>
-                        <span>Centro Clínico Sul</span><br>
-                        Torre I<br>
-                        SHLS 716 conj. L, Centro Clínico Sul Torre I
-                        salas T121/124, Brasília- DF – CEP: 70390-700
+                        <span><?= $post->post_title;?></span>
                     </p>
-                    <p>
-                        Torre II (Tomografia)<br>
-                        SHLS 716 conj. L, Centro Clínico Sul Torre II
-                        sala T223, Brasília- DF – CEP: 70390-700
-                    </p>
-                    <p>
-                        Torre II (Medicina Nuclear)<br>
-                        SHLS 716 conj. L, Centro Clínico Sul Praça da
-                        Saúde sala W162, Brasília- DF – CEP: 70390-700
-                    </p>
+                    <?=  $post->post_content ?>
                     <p>
                         <span>
-                            (61) 3326 0033 | 3771 3800<br>
+                            <?php echo get_post_meta($post->ID, 'fone', true); ?><br>
                         </span>
                         <span>
-                            (61) 9976-4074
+                            <?php echo get_post_meta($post->ID, 'whatsapp', true); ?>
                         </span>
                     </p>
                 </div>
-                <a href="<?php home_url() ?>/Imeb/unidades-single/">
+                <a href="<?= $link ?>">
                     <button>CONHEÇA MAIS <br>SOBRE A UNIDADE</button>
                 </a>
             </div>
+            <?php } ?>
         </div>
-        <div class="conteudo">
-            <div class="primeira-camada">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/Screenshot_231.png">
-                <div class="textos">
-                    <p>
-                        <span>Centro Clínico Sul</span><br>
-                        Torre I<br>
-                        SHLS 716 conj. L, Centro Clínico Sul Torre I
-                        salas T121/124, Brasília- DF – CEP: 70390-700
-                    </p>
-                    <p>
-                        Torre II (Tomografia)<br>
-                        SHLS 716 conj. L, Centro Clínico Sul Torre II
-                        sala T223, Brasília- DF – CEP: 70390-700
-                    </p>
-                    <p>
-                        Torre II (Medicina Nuclear)<br>
-                        SHLS 716 conj. L, Centro Clínico Sul Praça da
-                        Saúde sala W162, Brasília- DF – CEP: 70390-700
-                    </p>
-                    <p>
-                        <span>
-                            (61) 3326 0033 | 3771 3800<br>
-                        </span>
-                        <span>
-                            (61) 9976-4074
-                        </span>
-                    </p>
-                </div>
-                <a href="<?php home_url() ?>/Imeb/unidades-single/">
-                    <button>CONHEÇA MAIS <br>SOBRE A UNIDADE</button>
-                </a>
-            </div>
-        </div>
-        <div class="conteudo">
-            <div class="primeira-camada">
-                <img src="<?php bloginfo('template_directory') ?>/assets/images/Screenshot_231.png">
-                <div class="textos">
-                    <p>
-                        <span>Centro Clínico Sul</span><br>
-                        Torre I<br>
-                        SHLS 716 conj. L, Centro Clínico Sul Torre I
-                        salas T121/124, Brasília- DF – CEP: 70390-700
-                    </p>
-                    <p>
-                        Torre II (Tomografia)<br>
-                        SHLS 716 conj. L, Centro Clínico Sul Torre II
-                        sala T223, Brasília- DF – CEP: 70390-700
-                    </p>
-                    <p>
-                        Torre II (Medicina Nuclear)<br>
-                        SHLS 716 conj. L, Centro Clínico Sul Praça da
-                        Saúde sala W162, Brasília- DF – CEP: 70390-700
-                    </p>
-                    <p>
-                        <span>
-                            (61) 3326 0033 | 3771 3800<br>
-                        </span>
-                        <span>
-                            (61) 9976-4074
-                        </span>
-                    </p>
-                </div>
-                <a href="<?php home_url() ?>/Imeb/unidades-single/">
-                    <button>CONHEÇA MAIS <br>SOBRE A UNIDADE</button>
-                </a>
-            </div>
-        </div>
+        
     </section>

@@ -12,36 +12,50 @@
          
                    <!-- Wrapper for slides -->
                    <div class="carousel-inner" role="listbox">
-       
-                       <div class="item active">
-                           <div class="objeto-slider">
-                               <div class="texto-slider">
-                                   <h1>
-                                       Resultados Online
-                                   </h1>
-                                   <p>
-                                       Agora você pode consultar os seus
-                                       resultados dos seus exames
-                                       em qualquer lugar
-                                   </p>
-                               </div>
-                           </div>
-                       </div>
-               
-                       <div class="item">
-                           <div class="objeto-slider">
-                               <div class="texto-slider">
-                                   <h1>
-                                       Resultados Online
-                                   </h1>
-                                   <p>
-                                       Agora você pode consultar os seus
-                                       resultados dos seus exames
-                                       em qualquer lugar
-                                   </p>
-                               </div>
-                           </div>
-                       </div>   
+           <?php
+      $c_slide = 0;
+            foreach ($the_query->posts as $key => $post) { 
+          if($c_slide == 0){?>
+                    <div class="item active">
+                        <div class="objeto-slider" style="background: linear-gradient(
+0deg
+, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url(<?=get_the_post_thumbnail_url($post->ID) ?>);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+                            <div class="texto-slider">
+                                <h1>
+                                    <?= $post->post_title;?>
+                                </h1>
+                                <p>
+                                    <?=  $post->post_content ?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            <?php
+            }else{?>
+          <div class="item">
+                        <div class="objeto-slider" style="background: linear-gradient(
+0deg
+, rgba(49,113,183,1) 0%, rgba(49,113,183,0) 100%), url(<?=get_the_post_thumbnail_url($post->ID) ?>);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+                            <div class="texto-slider">
+                                <h1>
+                                    <?= $post->post_title;?>
+                                </h1>
+                                <p>
+                                    <?=  $post->post_content ?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>  
+      <?php   }
+        $c_slide++;
+      }
+            ?>  
        
                    </div>
                    
@@ -82,14 +96,14 @@
                        <h2>EXAMES</h2>
                    </div>
                    <div class="icones-exames">
-                       <img src="./assets/imagens/exames/eco.png" class="img-eixo-exames">
-                       <img src="./assets/imagens/exames/cintilografia.png" class="img-eixo-exames">
-                       <img src="./assets/imagens/exames/desin.png" class="img-eixo-exames">
-                       <img src="./assets/imagens/exames/mamografia.png" class="img-eixo-exames">
-                       <img src="./assets/imagens/exames/pet.png" class="img-eixo-exames">
-                       <img src="./assets/imagens/exames/ress.png" class="img-eixo-exames">
-                       <img src="./assets/imagens/exames/ress.png" class="img-eixo-exames">
-                       <img src="./assets/imagens/exames/sui.png" class="img-eixo-exames">
+                       <img src="<?php bloginfo('template_directory') ?>/assets/images/exames/ecografia1.png" class="img-eixo-exames"/>
+      <img src="<?php bloginfo('template_directory') ?>/assets/images/exames/cintilografia1.png"  class="img-eixo-exames"/>
+      <img src="<?php bloginfo('template_directory') ?>/assets/images/exames/densitometria1.png"  class="img-eixo-exames"/>
+      <img src="<?php bloginfo('template_directory') ?>/assets/images/exames/mamografia1.png"  class="img-eixo-exames"/>
+      <img src="<?php bloginfo('template_directory') ?>/assets/images/exames/pet1.png"  class="img-eixo-exames"/>
+      <img src="<?php bloginfo('template_directory') ?>/assets/images/exames/ressonancia1.png"  class="img-eixo-exames"/>
+      <img src="<?php bloginfo('template_directory') ?>/assets/images/exames/tomografia.png"  class="img-eixo-exames"/>
+      <img src="<?php bloginfo('template_directory') ?>/assets/images/exames/suite.png"  class="img-eixo-exames"/>
                    </div>
                </div>
            </div>
@@ -170,110 +184,29 @@
     	<div class="container">
     		<h1>DEPOIMENTOS DE NOSSOS CLIENTES</h1>
     		<div class="depoimento-full">
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m1.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Atendimento para uma tomografia sem contraste de emergência
-	foi bem rápido, todos os atendentes e técnicos foram muito
-	simpáticos. Recomendo."</p>
-	    			<strong>Aline Almeida</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
+          <?php
 
+            foreach ($the_query_depo->posts as $key => $post) { ?>
+	    		
 	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m2.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Há tempos conheço o IMEB, desde o começo me apaixonei e hoje mora no meu coração. A Higiene é nota 10, médicos atenciosos e inteligentes, recepção acolhedora, nos orienta nos exames. Tenho muita confiança. Parabéns para a Kelly, funcionária que nos acolhe e acalma na hora da injeção. Bravo para todas as unidades do IMEB."</p>
-	    			<strong>Sonia Teixeira Mendes de Souza</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
+            <div class="col-img">
+            <img src="<?=get_the_post_thumbnail_url($post->ID) ?>">
+            </div>
+            <div class="col-txt">
+            <p class="texto"><?=  $post->post_content ?></p>
+            <strong><?= $post->post_title;?></strong>
+            <div class="rating-stars">
+            <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          </div>
+          </div>
+          </div>
+	    		<?php } ?>
 
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m3.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Minha irmã, Vanessa Angélica, foi tratada com muito carinho e, estando insegura em relação ao exame, foi tranquilizada. Tudo correu bem. Obrigado!.”</p>
-	    			<strong>Isis G. Coelho Chaves</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
 	    		</div>
-
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/man-smile.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Elogio ao Dr. Leonardo Prado, quanto ao profissionalismo e humildade na revisão dos resultados. Parabéns!”</p>
-	    			<strong>Marcos Antônio P. Moraes</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
-
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m4.jpg">>
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Registro aqui minha satisfação e só tenho elogios a equipe!”</p>
-	    			<strong>Valéria Pereira de Araujo</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
-
-	    		<div class="card-depoimento">
-	    			<div class="col-img">
-	    			<img src="<?php bloginfo('template_directory') ?>/assets/images/depoimentos/m5.jpg">
-	    			</div>
-	    			<div class="col-txt">
-	    			<p class="texto">“Parabéns à toda equipe!"</p>
-	    			<strong>Vivia Vieira Soares</strong>
-	    			<div class="rating-stars">
-	    			<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-	    		</div>
-	    	</div>
     	</div>
     </section>
        <div class="espaco">
