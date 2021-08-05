@@ -43,23 +43,19 @@
 			</div>
 
 			<div class="cards fadeIn" id="cliente">
+			<?php
+                foreach ($the_query->posts as $key => $post) { ?>
+				<a href="<?php echo get_post_meta($post->ID, 'link_materiais', true); ?>">
 				<div class="card-material">
-					<img src="<?php bloginfo('template_directory') ?>/assets/images/02-tenho-cancer.png">
+					<img src="<?=get_the_post_thumbnail_url($post->ID) ?>">
 					<div class="txt-material">
-						<p><strong>O novo Coronavírus</strong></p>
-						<p>O novo coronavírus pegou
-						todo mundo de surpresa.
-						Como ele surgiu? Como
-						somos infectados? Por que
-						ele leva à morte? O que fazer
-
-						se eu estiver com os sinto-
-						mas? Baixe a Cartilha e tire
-
-						todas as principais dúvidas
-						sobre essa pandemia.</p>
+						<p><strong><?= $post->post_title;?></strong></p>
+						<p><?=  $post->post_content ?></p>
 					</div>
 				</div>
+				</a>  
+				<?php
+				}?>
 				<div class="card-material">
 					<img src="<?php bloginfo('template_directory') ?>/assets/images/02-tenho-cancer.png">
 					<div class="txt-material">
@@ -97,40 +93,20 @@
 			</div>
 
 			<div class="cards fadeIn" id="medico">
+			<?php
+                foreach ($the_query_medico->posts as $key => $post) { ?>
+				<a href="<?php echo get_post_meta($post->ID, 'link_materiais', true); ?>">
 				<div class="card-material">
-					<img src="<?php bloginfo('template_directory') ?>/assets/images/02-tenho-cancer.png">
+					<img src="<?=get_the_post_thumbnail_url($post->ID) ?>">
 					<div class="txt-material">
-						<p><strong>O novo Coronavírus</strong></p>
-						<p>O novo coronavírus pegou
-						todo mundo de surpresa.
-						Como ele surgiu? Como
-						somos infectados? Por que
-						ele leva à morte? O que fazer
-
-						se eu estiver com os sinto-
-						mas? Baixe a Cartilha e tire
-
-						todas as principais dúvidas
-						sobre essa pandemia.</p>
+						<p><strong><?= $post->post_title;?></strong></p>
+						<p><?=  $post->post_content ?></p>
 					</div>
 				</div>
-				<div class="card-material">
-					<img src="<?php bloginfo('template_directory') ?>/assets/images/02-tenho-cancer.png">
-					<div class="txt-material">
-						<p><strong>O novo Coronavírus</strong></p>
-						<p>O novo coronavírus pegou
-						todo mundo de surpresa.
-						Como ele surgiu? Como
-						somos infectados? Por que
-						ele leva à morte? O que fazer
-
-						se eu estiver com os sinto-
-						mas? Baixe a Cartilha e tire
-
-						todas as principais dúvidas
-						sobre essa pandemia.</p>
-					</div>
-				</div>
+				</a>  
+				<?php
+				}?>
+				
 			</div>
 		</div>
 	</section>

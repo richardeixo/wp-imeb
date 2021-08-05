@@ -57,3 +57,6 @@ body > section.boxconteudo-materiais > div > div.panel-heading > ul > li:nth-chi
     border: 1px solid #107abe;
 
 }
+.content-lista-unica img {
+    max-width: 100% !important;
+}

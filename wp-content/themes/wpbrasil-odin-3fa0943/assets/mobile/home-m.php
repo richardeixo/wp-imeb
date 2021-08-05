@@ -96,30 +96,29 @@
        </section>
    
        <section class="conteudo-blog-m">
-           <h2>CONTEÚDOS DA SAÚDE</h2>
+       <h2>CONTEÚDOS DA SAÚDE</h2>
            <div class="conteudo-hidden">
                <div class="cards-conteudo">
-                   <div class="card-conteudo conteudo-img">
-                       <div class="texto-conteudo">
-                           <h3>Como é feito um diagnóstico de câncer? É possível dar falso positivo?</h3>
-                           <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
-                       </div>
-                   </div>
-   
-                   <div class="card-conteudo conteudo-img2">
-                       <div class="texto-conteudo">
-                           <h3>Como escolher um oncologista?</h3>
-                           <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
-                       </div>
-                   </div>
-   
-
-   
-   
+                    <?php echo do_shortcode( '[tres-recentes]' ); ?>      
+                    
    
                </div>            
            </div>
    
+   
+           <div class="conteudo-hidden">
+               <div class="cards-conteudo">
+                   
+   
+               <?php echo do_shortcode( '[tres-recomenda]' ); ?> 
+   
+
+   
+   
+               </div>
+   
+               
+           </div>
    
            <div class="conteudo-hidden">
                <div class="cards-conteudo">
