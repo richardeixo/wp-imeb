@@ -15,5 +15,6 @@
 
 
 	<?php wp_footer(); ?>
+	<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/5d35159c-be6a-436d-88a1-0854da59a4d8-loader.js" ></script>
 </body>
 </html>

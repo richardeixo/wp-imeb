@@ -1,4 +1,4 @@
- <section style="margin:0;" class="banner">
+<section style="margin:0;" class="banner">
         <div class="container-fluid container-eixo banner-eixo">
             <div class="blue-banner">                
             </div>

@@ -110,7 +110,7 @@
        </section>
    
        <section class="conteudo-blog-m">
-       <h2>CONTEÚDOS DA SAÚDE</h2>
+           <h2>CONTEÚDOS DA SAÚDE</h2>
            <div class="conteudo-hidden">
                <div class="cards-conteudo">
                     <?php echo do_shortcode( '[tres-recentes]' ); ?>      
@@ -136,43 +136,9 @@
    
            <div class="conteudo-hidden">
                <div class="cards-conteudo">
-                   <div class="card-conteudo conteudo-img3">
-                       <div class="texto-conteudo">
-                           <h3>Como é feito o exame de PET/CT?</h3>
-                           <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
-                       </div>
-                   </div>
+                   
    
-                   <div class="card-conteudo conteudo-img4">
-                       <div class="texto-conteudo">
-                           <h3>O que detecta o exame de PET-CT?</h3>
-                           <a href="<?php home_url() ?>/Imeb/blog-exame/"><button>Ver mais</button></a>
-                       </div>
-                   </div>
-   
-
-   
-   
-               </div>
-   
-               
-           </div>
-   
-           <div class="conteudo-hidden">
-               <div class="cards-conteudo">
-                   <div class="card-conteudo-video">
-                       <iframe width="315" height="200" src="https://www.youtube.com/embed/P8A2iXI2JdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                   </div>
-   
-                   <div class="card-conteudo-video">
-                       <iframe width="315" height="200" src="https://www.youtube.com/embed/8DcgDBVjW_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                   </div>
-   
-                   <div class="card-conteudo-video">
-                       <iframe width="315" height="200" src="https://www.youtube.com/embed/GVoyZJW6JD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                   </div>
-   
-   
+                   <?php echo do_shortcode( '[tres-youtubes]' ); ?> 
    
                </div>
    

@@ -1,4 +1,4 @@
-  <section class="titulo-materiais">
+<section class="titulo-materiais">
         <h1>Fale Conosco</h1>
     </section>
     <section class="searchbar">
@@ -33,7 +33,7 @@
                <h2>FALE CONOSCO</h2>
                <div class="self-form">
                     <form>
-                        <input type="text" id="fname" name="fname" placeholder="Nome">
+                        <input type="name" id="fname" name="fname" placeholder="Nome">
                         <input type="email" id="femail" name="femail" placeholder="Email">
                         <a href="#"><button class="enviar-arquivo">Escolha seu Arquivo</button></a>
                         <textarea class="form-control" id="ftextarea" name="ftextarea" rows="8" placeholder="Mensagem"></textarea>

@@ -1,4 +1,4 @@
- <section style="margin:0;" class="banner">
+<section style="margin:0;" class="banner">
         <div class="container-fluid container-eixo banner-eixo">
             <div class="blue-banner">                
             </div>
@@ -42,7 +42,7 @@
                <h2>TRABALHE CONOSCO</h2>
                <div class="self-form">
                     <form>
-                        <input type="text" id="fname" name="fname" placeholder="Nome">
+                        <input type="name" id="fname" name="fname" placeholder="Nome">
                         <input type="email" id="femail" name="femail" placeholder="Email">
                         <a href="#"><button class="enviar-arquivo">Escolha seu Arquivo</button></a>
                         <textarea class="form-control" id="ftextarea" name="ftextarea" rows="8" placeholder="Mensagem"></textarea>

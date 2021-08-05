@@ -449,3 +449,515 @@ function post_depoimentos() {
 }
 
 add_action( 'init', 'post_depoimentos', 1 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function tresrecentes() {
+
+	
+    global $post;
+    $args = array( 'numberposts' => 3 );
+    $myposts = get_posts( $args );
+    foreach( $myposts as $post ) : setup_postdata($post); ?>
+
+<div class="card-conteudo conteudo-img" style="background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url(<?php echo the_post_thumbnail_url(); ?>)">
+    <div class="texto-conteudo">
+        <h3><?php the_title(); ?></h3>
+        <a href="<?php the_permalink(); ?>"><button>Ver mais</button></a>
+    </div>
+</div>
+
+
+<?php endforeach;
+
+}
+add_shortcode( 'tres-recentes', 'tresrecentes' );
+
+
+
+
+
+
+
+
+
+
+function tresrecentesdesk() {
+
+	
+    global $post;
+    $args = array( 'numberposts' => 2 );
+    $myposts = get_posts( $args );
+    foreach( $myposts as $post ) : setup_postdata($post); ?>
+
+<div class="card-conteudo conteudo-img" style="background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url(<?php echo the_post_thumbnail_url(); ?>)">
+    <div class="texto-conteudo">
+        <h3><?php the_title(); ?></h3>
+        <a href="<?php the_permalink(); ?>"><button>Ver mais</button></a>
+    </div>
+</div>
+
+
+<?php endforeach;
+
+}
+add_shortcode( 'tres-recentesdesk', 'tresrecentesdesk' );
+
+
+
+
+
+
+
+function tresrecentesdeskblog() {
+
+	
+    global $post;
+    $args = array( 'numberposts' => 3 );
+    $myposts = get_posts( $args );
+    foreach( $myposts as $post ) : setup_postdata($post); ?>
+
+<div class="card-conteudo conteudo-img" style="background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url(<?php echo the_post_thumbnail_url(); ?>)">
+    <div class="texto-conteudo">
+        <h3><?php the_title(); ?></h3>
+        <a href="<?php the_permalink(); ?>"><button>Ver mais</button></a>
+    </div>
+</div>
+
+
+<?php endforeach;
+
+}
+add_shortcode( 'tres-recentesdeskblog', 'tresrecentesdesk' );
+
+
+
+
+
+
+
+
+
+function tresrecomenda() {
+
+	
+    global $post;
+    $args = array( 'numberposts' => 3, 'cat' => 2 );
+    $myposts = get_posts( $args );
+    foreach( $myposts as $post ) : setup_postdata($post); ?>
+
+<div class="card-conteudo conteudo-img" style="background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url(<?php echo the_post_thumbnail_url(); ?>)">
+    <div class="texto-conteudo">
+        <h3><?php the_title(); ?></h3>
+        <a href="<?php the_permalink(); ?>"><button>Ver mais</button></a>
+    </div>
+</div>
+
+
+<?php endforeach;
+
+}
+add_shortcode( 'tres-recomenda', 'tresrecomenda' );
+
+
+function tresrecomendadesk() {
+
+	
+    global $post;
+    $args = array( 'numberposts' => 2, 'cat' => 2 );
+    $myposts = get_posts( $args );
+    foreach( $myposts as $post ) : setup_postdata($post); ?>
+
+<div class="card-conteudo conteudo-img" style="background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url(<?php echo the_post_thumbnail_url(); ?>)">
+    <div class="texto-conteudo">
+        <h3><?php the_title(); ?></h3>
+        <a href="<?php the_permalink(); ?>"><button>Ver mais</button></a>
+    </div>
+</div>
+
+
+<?php endforeach;
+
+}
+add_shortcode( 'tres-recomendadesk', 'tresrecomendadesk' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function post_materiais() {
+    $material = new Odin_Post_Type(
+        'Material Cliente', // Nome (Singular) do Post Type.
+        'materiais clientes' // Slug do Post Type.
+    );
+
+    $material->set_labels(
+        array(
+            'menu_name' => __( 'Materiais cliente', 'odin' )
+        )
+    );
+
+    $material->set_arguments(
+        array(
+            'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','custom-fields' ),
+            'menu_icon' => 'dashicons-book-alt'
+        )
+    );
+}
+
+add_action( 'init', 'post_materiais', 1 );
+
+
+
+function post_materiais_medico() {
+    $materiaismedico = new Odin_Post_Type(
+        'materiaismedico Medico', // Nome (Singular) do Post Type.
+        'materiaismedico' // Slug do Post Type.
+    );
+
+    $materiaismedico->set_labels(
+        array(
+            'menu_name' => __( 'Materiais medico', 'odin' )
+        )
+    );
+
+    $materiaismedico->set_arguments(
+        array(
+            'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','custom-fields' ),
+            'menu_icon' => 'dashicons-book-alt'
+        )
+    );
+}
+
+add_action( 'init', 'post_materiais_medico', 1 );
+
+
+
+
+function post_youtube() {
+    $youtube = new Odin_Post_Type(
+        'youtube', // Nome (Singular) do Post Type.
+        'youtube' // Slug do Post Type.
+    );
+
+    $youtube->set_labels(
+        array(
+            'menu_name' => __( 'youtube', 'odin' )
+        )
+    );
+
+    $youtube->set_arguments(
+        array(
+            'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt','custom-fields' ),
+            'menu_icon' => 'dashicons-book-alt'
+        )
+    );
+}
+
+add_action( 'init', 'post_youtube', 1 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function youtubewid() {
+
+	$args = array(
+		'numberposts' => 2,
+		'post_type'=> 'youtube',
+		'order'    => 'ASC'
+		);              
+	
+	$the_query = new WP_Query( $args );
+
+	foreach ($the_query->posts as $key => $post) {?>
+
+		<div class="card-conteudo-video">
+		<iframe width="315" height="200" src="https://www.youtube.com/embed/<?php echo get_post_meta($post->ID, 'link_materiais', true); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	
+	<?php }
+	
+}
+	add_shortcode( 'tres-youtubes', 'youtubewid' );
+
+
+
