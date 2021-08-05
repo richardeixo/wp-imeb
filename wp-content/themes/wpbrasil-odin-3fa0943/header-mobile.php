@@ -31,16 +31,16 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/assets-custom/reset.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/assets-custom/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-menu-m.css">
-
-    <?php  if (is_page('Home')){ ?>
-
-        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-slider-m.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-slider-m.css">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-searchbar-m.css">
         
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-exames-m.css">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-content-blog-m.css">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/assets/mobile/css/home/style-depoimentos.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <?php  if (is_page('Home')){ ?>
+
+      
     <?php }?>
 	
 	<?php  if (is_page('Blog')){ ?>

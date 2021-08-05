@@ -10,6 +10,12 @@
 
 get_header($device); 
 
+$args = array(
+    'post_type'=> 'unidades',
+    'order'    => 'ASC'
+    );    
+$the_query = new WP_Query( $args );
+
 if ($device == "desktop") {
 	include('assets/desktop/unidades-display1.php');
 }else{

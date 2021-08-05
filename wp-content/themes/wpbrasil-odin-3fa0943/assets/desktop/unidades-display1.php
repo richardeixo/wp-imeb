@@ -1,10 +1,4 @@
-<?php
-$args = array(
-    'post_type'=> 'unidades',
-    'order'    => 'ASC'
-    );    
-$the_query = new WP_Query( $args );
-?>
+
 	<section style="margin:0;" class="banner">
         <div class="container-fluid container-eixo banner-eixo">
             <div class="blue-banner">                
